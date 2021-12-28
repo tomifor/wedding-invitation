@@ -1,3 +1,6 @@
+$primary-color: #F59E0B;
+$primary-color-dark: #de910d;
+
 html,
 body {
   padding: 0;
@@ -13,4 +16,84 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.scrollDown {
+  position: absolute;
+  bottom: 20px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: none;
+  width: 30px;
+  height: 30px;
+  border-bottom: 4px solid #000;
+  border-right: 4px solid #000;
+  z-index: 9;
+  left: calc(50% - 15px);
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 2s ease-in-out infinite;
+  -moz-animation: fade_move_down 2s ease-in-out infinite;
+  animation: fade_move_down 2s ease-in-out infinite;
+}
+
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0,-10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0,10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.btn-primary {
+  cursor: pointer;
+  color: #ffffff;
+  background: $primary-color;
+  border: 1px solid $primary-color;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  border-radius: 2rem;
+  &:hover {
+    background: $primary-color-dark;
+    color: #ffffff;
+    border-color: $primary-color-dark;
+  }
+}
+
+.section-container {
+  padding: 30px 5px;
+}
+
+section.gift {
+  background-color: #fff2e4;
+}
+
+footer {
+  p {
+    text-align: center;
+    color: #516745;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+section.thank-phrase {
+  text-align: center;
+  background-color: #425A3D;
+  p {
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
 }

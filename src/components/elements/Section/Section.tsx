@@ -8,9 +8,10 @@ type Props = {
   description?: string;
   buttonLabel?: string;
   redirect?: string;
+  onClick?(): void;
 }
 
-const Section = ({title, buttonLabel, redirect, icon, description}: Props) => {
+const Section = ({title, buttonLabel, redirect, icon, description, onClick}: Props) => {
 
   return (
     <div className={styles.container}>
@@ -18,8 +19,9 @@ const Section = ({title, buttonLabel, redirect, icon, description}: Props) => {
       <p className={styles.title}>{title}</p>
       <p className={styles.description}>{description}</p>
       {redirect && <Link href={redirect}>
-        <button>{buttonLabel}</button>
+        <button type={'button'} className={'btn-primary'}>{buttonLabel}</button>
       </Link>}
+      {onClick && <button type={'button'} className={'btn-primary'} onClick={onClick}>{buttonLabel}</button>}
     </div>
   )
 }
