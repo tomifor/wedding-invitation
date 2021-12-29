@@ -4,6 +4,7 @@ import Section from '../elements/Section/Section'
 import CountdownSection from '../elements/CountdownSection/CountdownSection'
 import { BiChurch, BiGift, BiDrink } from 'react-icons/bi'
 import Link from 'next/link'
+import SocialSection from '../elements/SocialSection/SocialSection'
 
 const FullLayout = () => {
 
@@ -47,8 +48,11 @@ const FullLayout = () => {
         <Section
           description={'Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!'}
           title={'CONFIRMACIÓN DE ASISTENCIA'}
-          redirect={'https://forms.gle/5SCh7nYv61WodoKW8'}
+          redirect={'https://docs.google.com/forms/d/e/1FAIpQLSdaG6talvl9Q_btgpGMevFZFCXNNNunPFLOUVUhTy01zbem4Q/viewform'}
           buttonLabel={'Confirmar asistencia'}/>
+      </section>
+      <section>
+        <SocialSection/>
       </section>
       <section className={'section-container thank-phrase'}>
         <p>¡Gracias por estar en este momento tan importante! Los queremos 😁 !</p>
