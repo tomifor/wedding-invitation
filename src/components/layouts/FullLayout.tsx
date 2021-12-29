@@ -12,6 +12,7 @@ const FullLayout = () => {
 
   }
 
+  // dorado #d79235
   return (
     <div>
       <Welcome/>
@@ -22,14 +23,14 @@ const FullLayout = () => {
         <div className={'grid'}>
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Ceremonia'}
-                     icon={<BiChurch size={48} color={'#d79235'}/>}
+                     icon={<BiChurch size={48} color={'#7B4E99'}/>}
                      description={'La ceremonia se realizará el 12 de Marzo a las 19:00 horas en la Parroquia Ntra. Sra. del Carmen, Tigre.'}
                      redirect={'https://www.google.com.ar/maps'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Fiesta'}
-                     icon={<BiDrink size={48} color={'#d79235'}/>}
+                     icon={<BiDrink size={48} color={'#7B4E99'}/>}
                      description={'Después de la ceremonia festejaremos en Astilleros Milberg, Nordelta. '}
                      redirect={'https://www.google.com.ar/maps'}
                      buttonLabel={'Ver en Google Maps'}/>
@@ -39,12 +40,13 @@ const FullLayout = () => {
       </section>
       <section className={'section-container gift'}>
         <Section
-          icon={<BiGift size={48} color={'#d79235'}/>}
+          icon={<BiGift size={48} color={'#A1FFCE'}/>}
+          secondaryButton
           description={'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}
           onClick={showBankData}
           buttonLabel={'Ver datos'}/>
       </section>
-      <section className={'section-container'}>
+      <section className={'section-container assistance'}>
         <Section
           description={'Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!'}
           title={'CONFIRMACIÓN DE ASISTENCIA'}
@@ -55,7 +57,8 @@ const FullLayout = () => {
         <SocialSection/>
       </section>
       <section className={'section-container thank-phrase'}>
-        <p>¡Gracias por estar en este momento tan importante! Los queremos 😁 !</p>
+        <p>¡Gracias por estar en este momento tan importante!</p>
+        <p> Los queremos 😁 </p>
       </section>
       <footer>
        <p>Made with ♥ by <Link href={'https://www.instagram.com/tomifor/'}>@tomifor</Link></p>

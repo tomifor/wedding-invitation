@@ -7,11 +7,20 @@ type Props = {
   icon?: ReactElement;
   description?: string;
   buttonLabel?: string;
+  secondaryButton?: boolean;
   redirect?: string;
-  onClick?(): void;
+  onClick? (): void;
 }
 
-const Section = ({title, buttonLabel, redirect, icon, description, onClick}: Props) => {
+const Section = ({
+                   title,
+                   buttonLabel,
+                   redirect,
+                   icon,
+                   description,
+                   onClick,
+                   secondaryButton
+                 }: Props) => {
 
   return (
     <div className={styles.container}>
@@ -19,9 +28,10 @@ const Section = ({title, buttonLabel, redirect, icon, description, onClick}: Pro
       <p className={styles.title}>{title}</p>
       <p className={styles.description}>{description}</p>
       {redirect && <Link href={redirect}>
-        <button type={'button'} className={'btn-primary'}>{buttonLabel}</button>
+        <button type={'button'} className={secondaryButton ? 'btn-secondary' : 'btn-primary'}>{buttonLabel}</button>
       </Link>}
-      {onClick && <button type={'button'} className={'btn-primary'} onClick={onClick}>{buttonLabel}</button>}
+      {onClick && <button type={'button'} className={secondaryButton ? 'btn-secondary' : 'btn-primary'}
+                          onClick={onClick}>{buttonLabel}</button>}
     </div>
   )
 }
