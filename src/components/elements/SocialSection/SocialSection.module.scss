@@ -1,15 +1,18 @@
 .container {
   text-align: center;
   padding: 30px 10px;
-  background: linear-gradient(90deg, #A1FFCE, #FAFFD1);
+  background: linear-gradient(90deg, #FFEFBA, #FFFFFF);
   .hashtag {
     font-size: 36px;
-    color: #333333;
+    color: #563f1c;
     cursor: pointer;
   }
   .description {
-    color: #333333;
+    color: #88642e;
     margin-bottom: 30px;
     font-weight: 300;
+  }
+  .link {
+    background-color: white;
   }
 }

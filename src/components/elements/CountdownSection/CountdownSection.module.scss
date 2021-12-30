@@ -1,8 +1,8 @@
 .container {
   padding: 20px 10px;
   //background-color: #f3f4ef;
-  background-color: #f3fdf7;
-  color: #3f9868;
+  background-color: lighten(#6e7b62, 53);
+  color: #6e7b62;
   //color: #627d54;
   text-align: center;
   .title {
@@ -10,7 +10,7 @@
     font-weight: bold;
     text-align: center;
     //color: #516745;
-    color: #337c54;
+    color: #6e7b62;
     margin: 0;
     text-transform: uppercase;
   }

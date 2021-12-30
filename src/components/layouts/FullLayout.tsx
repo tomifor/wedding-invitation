@@ -20,16 +20,16 @@ const FullLayout = () => {
         <div className={'grid'}>
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Ceremonia'}
-                     icon={<BiChurch size={48} color={'#7B4E99'}/>}
-                     description={'La ceremonia se realizará el 12 de Marzo a las 19:00 horas en la Parroquia Ntra. Sra. del Carmen, Tigre.'}
-                     redirect={'https://www.google.com.ar/maps'}
+                     icon={<BiChurch size={48} color={'#c3b38f'}/>}
+                     description={'La ceremonia se realizará el 19 de Febrero a las 17:00 horas en la Parroquia San Francisco Solano, San Miguel.'}
+                     redirect={'https://goo.gl/maps/DniBzfSNiwQ2W35f8'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Fiesta'}
-                     icon={<BiDrink size={48} color={'#7B4E99'}/>}
-                     description={'Después de la ceremonia festejaremos en Astilleros Milberg, Nordelta. '}
-                     redirect={'https://www.google.com.ar/maps'}
+                     icon={<BiDrink size={48} color={'#c3b38f'}/>}
+                     description={'Después de la ceremonia festejaremos en la Quinta Los Diez, Villa de Mayo. '}
+                     redirect={'https://goo.gl/maps/6tVzwmAFaPs25h6i6'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
 
@@ -37,7 +37,7 @@ const FullLayout = () => {
       </section>
       <section className={'section-container gift'}>
         <Section
-          icon={<BiGift size={48} color={'#A1FFCE'}/>}
+          icon={<BiGift size={48} color={'#d4efc8'}/>}
           secondaryButton
           description={'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}
           onClick={() => setGiftModalVisible(true)}
