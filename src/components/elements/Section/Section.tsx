@@ -27,9 +27,9 @@ const Section = ({
       {icon}
       <p className={styles.title}>{title}</p>
       <p className={styles.description}>{description}</p>
-      {redirect && <Link href={redirect}>
+      {redirect && <a href={redirect} target={'_blank'} rel="noopener noreferrer">
         <button type={'button'} className={secondaryButton ? 'btn-secondary' : 'btn-primary'}>{buttonLabel}</button>
-      </Link>}
+      </a>}
       {onClick && <button type={'button'} className={secondaryButton ? 'btn-secondary' : 'btn-primary'}
                           onClick={onClick}>{buttonLabel}</button>}
     </div>

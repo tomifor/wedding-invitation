@@ -10,12 +10,9 @@ const Home: NextPage = () => {
         <title>Sofi y Maxi</title>
         <meta name="description" content="Invitación de casamiento"/>
         <link rel="icon" href="/favicon.ico"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet"/>
-
       </Head>
       <div className={styles.soon}>
-        <Image src={'/undraw_wedding.svg'} height={200} width={200}/>
+        <Image src={'/undraw_wedding.svg'} height={200} width={200} alt={'Dibujo de casamiento'}/>
         <h1 className={styles.title}>Coming soon!</h1>
         <h2 className={styles.subtitle}>Sofi y Maxi</h2>
       </div>

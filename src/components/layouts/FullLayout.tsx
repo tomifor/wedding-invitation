@@ -1,16 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Welcome from '../elements/Welcome/Welcome'
 import Section from '../elements/Section/Section'
 import CountdownSection from '../elements/CountdownSection/CountdownSection'
-import { BiChurch, BiGift, BiDrink } from 'react-icons/bi'
-import Link from 'next/link'
+import { BiChurch, BiDrink, BiGift } from 'react-icons/bi'
 import SocialSection from '../elements/SocialSection/SocialSection'
+import GiftModal from '../elements/GiftModal/GiftModal'
 
 const FullLayout = () => {
-
-  const showBankData = () => {
-
-  }
+  const [giftModalVisible, setGiftModalVisible] = useState<boolean>(false);
 
   // dorado #d79235
   return (
@@ -43,8 +40,9 @@ const FullLayout = () => {
           icon={<BiGift size={48} color={'#A1FFCE'}/>}
           secondaryButton
           description={'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}
-          onClick={showBankData}
+          onClick={() => setGiftModalVisible(true)}
           buttonLabel={'Ver datos'}/>
+        <GiftModal visible={giftModalVisible} onClose={() => setGiftModalVisible(false)}/>
       </section>
       <section className={'section-container assistance'}>
         <Section
@@ -61,7 +59,8 @@ const FullLayout = () => {
         <p> Los queremos 😁 </p>
       </section>
       <footer>
-       <p>Made with ♥ by <Link href={'https://www.instagram.com/tomifor/'}>@tomifor</Link></p>
+        <p>Made with ♥ by <a href={'https://www.instagram.com/tomifor/'} target={'_blank'}
+                             rel="noopener noreferrer">@tomifor</a></p>
       </footer>
     </div>
   )

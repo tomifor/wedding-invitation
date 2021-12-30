@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from  './SocialSection.module.scss';
-import Link from 'next/link';
 
 
 const SocialSection = () => {
@@ -8,9 +7,9 @@ const SocialSection = () => {
 
   return (
     <div className={styles.container}>
-      <Link href={hashtagUrl}><p className={styles.hashtag}>#SOFIYMAXI</p></Link>
+      <a href={hashtagUrl} className={styles.hashtag} target={'_blank'} rel="noopener noreferrer">#SOFIYMAXI</a>
       <p className={styles.description}>Ya podés etiquetarnos en Instagram con nuestro hashtag en tus fotos o videos.</p>
-      <Link href={hashtagUrl}><button className={'btn-secondary'} type={'button'}>Ver fotos de instagram</button></Link>
+      <a href={hashtagUrl} target={'_blank'} className={'btn-secondary'} type={'button'} rel="noopener noreferrer">Ver fotos de instagram</a>
     </div>
   )
 }
