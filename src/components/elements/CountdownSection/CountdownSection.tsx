@@ -2,7 +2,11 @@ import React from 'react';
 import Countdown from 'react-countdown';
 import styles from './CountdownSection.module.scss';
 
-const CountdownSection = () => {
+type Props = {
+  onClickEasterEgg?(): void;
+}
+
+const CountdownSection = ({onClickEasterEgg}: Props) => {
 
   const date = new Date('2022-02-19T17:00:00');
   return (
@@ -29,7 +33,7 @@ const CountdownSection = () => {
                 <p className={styles.timeLabel}>Minutos</p>
               </div>
               <div className={styles.timeContainer}>
-                <p className={styles.timeValue}>{seconds}</p>
+                <p className={styles.timeValue} onClick={onClickEasterEgg}>{seconds}</p>
                 <p className={styles.timeLabel}>Segundos</p>
               </div>
             </div>

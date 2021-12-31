@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import styles from './Section.module.scss';
-import Link from 'next/link';
 
 type Props = {
   title?: string;
