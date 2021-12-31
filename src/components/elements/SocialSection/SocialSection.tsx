@@ -8,8 +8,8 @@ const SocialSection = () => {
   return (
     <div className={styles.container}>
       <a href={hashtagUrl} className={styles.hashtag} target={'_blank'} rel="noopener noreferrer">#SOFIYMAXI</a>
-      <p className={styles.description}>Ya podés etiquetarnos en Instagram con nuestro hashtag en tus fotos o videos.</p>
-      <a href={hashtagUrl} target={'_blank'} className={`${styles.link} btn-primary`} type={'button'} rel="noopener noreferrer">Ver fotos de instagram</a>
+      <p className={styles.description}>No olvides etiquetarnos en tus fotos o videos de Instagram con nuestro hashtag!</p>
+      <a href={hashtagUrl} target={'_blank'} className={`${styles.link} btn-primary`} type={'button'} rel="noopener noreferrer">Ver fotos de Instagram</a>
     </div>
   )
 }

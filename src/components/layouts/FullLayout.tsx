@@ -21,7 +21,7 @@ const FullLayout = () => {
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Ceremonia'}
                      icon={<BiChurch size={48} color={'#c3b38f'}/>}
-                     description={'La ceremonia se realizará el 19 de Febrero a las 17:00 horas en la Parroquia San Francisco Solano, San Miguel.'}
+                     description={'La ceremonia se realizará el 19 de Febrero a las 17:00 horas en la Parroquia San Francisco Solano, Bella Vista.'}
                      redirect={'https://goo.gl/maps/DniBzfSNiwQ2W35f8'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
@@ -56,7 +56,7 @@ const FullLayout = () => {
       </section>
       <section className={'section-container thank-phrase'}>
         <p>¡Gracias por estar en este momento tan importante!</p>
-        <p> Los queremos 😁 </p>
+        <p> Los queremos 😁</p>
       </section>
       <footer>
         <p>Made with ♥ by <a href={'https://www.instagram.com/tomifor/'} target={'_blank'}

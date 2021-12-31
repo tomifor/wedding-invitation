@@ -1,26 +1,19 @@
 import React from 'react';
-import {
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay
-} from '@chakra-ui/modal'
+import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay } from '@chakra-ui/modal'
 import styles from './GiftModal.module.scss';
-import { Heading, useToast } from '@chakra-ui/react'
+import { Box, Heading, useToast } from '@chakra-ui/react'
 import { copyToClipboard } from '../../../utils/copyToClipboard'
-import {FiCopy} from 'react-icons/fi';
+import { FiCopy } from 'react-icons/fi';
+import Image from 'next/image';
 
 type Props = {
   visible: boolean;
-  onClose(): void;
+  onClose (): void;
 }
 
 const GiftModal = ({visible, onClose}: Props) => {
   const toast = useToast();
-  const CBU = 'XXXX213123123123';
+  const CBU = '1430001713001916770016';
   const ALIAS = 'sofiymaxi';
 
   const copy = (value: string, type: string) => {
@@ -35,15 +28,19 @@ const GiftModal = ({visible, onClose}: Props) => {
 
   return (
     <Modal isOpen={visible} onClose={onClose}>
-      <ModalOverlay />
-      <ModalContent>
-        <ModalCloseButton />
-        <ModalBody >
+      <ModalOverlay/>
+      <ModalContent style={{maxWidth: '95%', width: '400px'}}>
+        <ModalCloseButton/>
+        <ModalBody>
           <div className={styles.container}>
             <section>
               <Heading as={'h2'} size={'md'} className={styles.title}>Datos bancarios</Heading>
-              <Heading as={'h3'} size={'sm'}><strong>Cuenta Brubank</strong></Heading>
-              <p>Titular: Sofia Della Vecchia</p>
+              <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>
+                <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta Brubank</strong></Heading>
+                <Image src={'/brubank.png'} height={15} width={13} alt={'Logo brubank'}/>
+
+              </Box>
+              <p>Titular: Maximo Bunge</p>
               <div className={styles.row}>
                 <p>CBU: {CBU}</p>
                 <span className={styles.btnCopy} onClick={() => copy(CBU, 'CBU')}><FiCopy/></span>
@@ -52,12 +49,12 @@ const GiftModal = ({visible, onClose}: Props) => {
                 <p>Alias: {ALIAS}</p>
                 <span className={styles.btnCopy} onClick={() => copy(ALIAS, 'Alias')}><FiCopy/></span>
               </div>
-              <p>DNI: 23213333</p>
+              <p>Nº de cuenta: 1300191677001</p>
             </section>
-           <section className={styles.giftList}>
-             <Heading as={'h2'} size={'md'} className={styles.title}>Lista de regalos</Heading>
-             <a>Fravega</a>
-           </section>
+            {/*<section className={styles.giftList}>*/}
+            {/*  <Heading as={'h2'} size={'md'} className={styles.title}>Lista de regalos</Heading>*/}
+            {/*  <a>Fravega</a>*/}
+            {/*</section>*/}
           </div>
         </ModalBody>
       </ModalContent>

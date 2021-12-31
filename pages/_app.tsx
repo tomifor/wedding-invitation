@@ -10,7 +10,7 @@ function MyApp ({Component, pageProps}: AppProps) {
       <Head>
         <title>Sofi y Maxi</title>
         <meta name="description" content="Invitación de casamiento"/>
-        <link rel="icon" href="/favicon.ico"/>
+        <meta property="og:image" content="https://i.ibb.co/X87R0Qg/Captura-de-Pantalla-2021-12-30-a-la-s-22-39-00-2.png" />
       </Head>
       <ChakraProvider><Component {...pageProps} /></ChakraProvider>
     </div>
