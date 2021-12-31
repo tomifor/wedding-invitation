@@ -20,7 +20,7 @@ const FullLayout = () => {
 
   return (
     <div>
-      <Welcome onClickNames={() => setImageSelected({image: '/images/formal.jpg', order: 0})}/>
+      <Welcome enableTextGesture onClickNames={() => setImageSelected({image: '/images/formal.jpg', order: 0})}/>
       <section>
         <CountdownSection onClickEasterEgg={() => setImageSelected({image: '/images/campo.jpg', order: 1})} />
       </section>
@@ -33,10 +33,10 @@ const FullLayout = () => {
                      redirect={'https://goo.gl/maps/DniBzfSNiwQ2W35f8'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
-          <div className={'col-12 sm:col-12 md:col-12'}>
+          <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Fiesta'}
                      icon={<BiDrink size={48} color={'#c3b38f'}/>}
-                     description={'Después de la ceremonia festejaremos en la Quinta Los Diez, Villa de Mayo. '}
+                     description={'Después de la ceremonia festejaremos en la Quinta Los Diez, Villa de Mayo. 18:30 horas.'}
                      redirect={'https://goo.gl/maps/6tVzwmAFaPs25h6i6'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>

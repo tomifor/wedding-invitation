@@ -22,7 +22,7 @@ const SecretModal = ({image, order, visible, onClose}: Props) => {
           <Box marginTop={'40px'}>
             <Heading as={'h2'} size={'md'} color={'#a9913c'} textAlign={'center'} marginBottom={'15px'}>Esaaaa!
               Encontraste una de las fotos ocultas.</Heading>
-            <Text textAlign={'center'} marginBottom={'8px'} fontWeight={300}>El primero que encuentre las 5 fotos y arme bien la frase,
+            <Text textAlign={'center'} marginBottom={'8px'} fontWeight={300}>El primero que encuentre las <strong>5</strong> fotos y arme bien la frase,
               recibirá un regalo.</Text>
             <Box display={'flex'} justifyContent={'center'}>
               <Image src={image} height={420} width={420} alt={'Easter egg'}/>

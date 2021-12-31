@@ -119,3 +119,40 @@ section.thank-phrase {
   }
 }
 
+span.touch-gesture {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 5px;
+  position: absolute;
+  z-index: 0;
+  background-color: #d9caa9;
+  transform: scale(0.8);
+}
+
+span.touch-gesture::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 50%;
+  z-index: -1;
+  animation: ripple 2s ease-out infinite;
+}
+
+span.touch-gesture::before {
+  animation-delay: 0.2s;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
