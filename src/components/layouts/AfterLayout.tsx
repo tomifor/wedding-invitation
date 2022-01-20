@@ -22,7 +22,7 @@ const FullLayout = () => {
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Ceremonia'}
                      icon={<BiChurch size={48} color={'#c3b38f'} />}
-                     description={'La ceremonia se realizará el 19 de Febrero a las 17:00 horas en la Parroquia San Francisco Solano, Bella Vista.'}
+                     description={'La ceremonia se realizará el 5 de Marzo a las 17:00 horas en la Parroquia San Francisco Solano, Bella Vista.'}
                      redirect={'https://goo.gl/maps/DniBzfSNiwQ2W35f8'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
