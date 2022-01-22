@@ -21,14 +21,14 @@ const FullLayout = () => {
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Ceremonia'}
                      icon={<BiChurch size={48} color={'#c3b38f'} />}
-                     description={'La ceremonia se realizará el 5 de Marzo a las 16:00 horas en la Parroquia San Francisco Solano, Bella Vista.'}
+                     description={'La ceremonia es el 5 de Marzo a las 16:00 horas en la Parroquia San Francisco Solano, Bella Vista.'}
                      redirect={'https://goo.gl/maps/DniBzfSNiwQ2W35f8'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Fiesta'}
                      icon={<BiDrink size={48} color={'#c3b38f'}/>}
-                     description={'Después de la ceremonia festejaremos en La Quinta de Bella Vista. 17:00 horas.'}
+                     description={'Después de la ceremonia te esperamos en La Quinta de Bella Vista. 17:00 horas.'}
                      redirect={'https://goo.gl/maps/KQDrvz1CkL9RxTHx5'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
@@ -38,7 +38,7 @@ const FullLayout = () => {
         <Section
           icon={<BiGift size={48} color={'#d4efc8'} />}
           secondaryButton
-          description={'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}
+          description={'El mejor regalo es que nos acompañes en este día tan especial, pero si además nos querés hacer un regalo, podés ayudarnos con la Luna de Miel'}
           onClick={() => setGiftModalVisible(true)}
           buttonLabel={'Ver datos'}/>
         <GiftModal visible={giftModalVisible} onClose={() => setGiftModalVisible(false)}/>
