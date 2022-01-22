@@ -9,42 +9,34 @@ import SecretModal from '../elements/SecretModal/SecretModal'
 
 const FullLayout = () => {
   const [giftModalVisible, setGiftModalVisible] = useState<boolean>(false);
-  const [imageSelected, setImageSelected] = useState<{ image: string, order: number }>({image: '', order: 0});
-  const [giftTouched, setGiftTouched] = useState<number>(0);
-
-  useEffect(() => {
-    if(giftTouched >= 1) {
-      setImageSelected({image: '/images/cielo.jpg', order: 3})
-    }
-  }, [giftTouched])
 
   return (
     <div>
-      <Welcome enableTextGesture onClickNames={() => setImageSelected({image: '/images/formal.jpg', order: 0})}/>
+      <Welcome />
       <section>
-        <CountdownSection onClickEasterEgg={() => setImageSelected({image: '/images/campo.jpg', order: 1})} />
+        <CountdownSection />
       </section>
       <section className={'section-container'}>
         <div className={'grid'}>
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Ceremonia'}
-                     icon={<BiChurch size={48} color={'#c3b38f'} onClick={() => setImageSelected({image: '/images/propuesta.jpg', order: 2})}/>}
-                     description={'La ceremonia se realizará el 19 de Febrero a las 17:00 horas en la Parroquia San Francisco Solano, Bella Vista.'}
+                     icon={<BiChurch size={48} color={'#c3b38f'} />}
+                     description={'La ceremonia se realizará el 5 de Marzo a las 16:00 horas en la Parroquia San Francisco Solano, Bella Vista.'}
                      redirect={'https://goo.gl/maps/DniBzfSNiwQ2W35f8'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Fiesta'}
                      icon={<BiDrink size={48} color={'#c3b38f'}/>}
-                     description={'Después de la ceremonia festejaremos en la Quinta Los Diez, Villa de Mayo. 18:30 horas.'}
-                     redirect={'https://goo.gl/maps/6tVzwmAFaPs25h6i6'}
+                     description={'Después de la ceremonia festejaremos en La Quinta de Bella Vista. 17:00 horas.'}
+                     redirect={'https://goo.gl/maps/KQDrvz1CkL9RxTHx5'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
         </div>
       </section>
       <section className={'section-container gift'}>
         <Section
-          icon={<BiGift size={48} color={'#d4efc8'} onClick={() => setGiftTouched(v => v + 1)}/>}
+          icon={<BiGift size={48} color={'#d4efc8'} />}
           secondaryButton
           description={'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}
           onClick={() => setGiftModalVisible(true)}
@@ -53,25 +45,25 @@ const FullLayout = () => {
       </section>
       <section className={'section-container assistance'}>
         <Section
-          description={'Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!'}
-          title={'CONFIRMACIÓN DE ASISTENCIA'}
-          redirect={'https://docs.google.com/forms/d/e/1FAIpQLSdaG6talvl9Q_btgpGMevFZFCXNNNunPFLOUVUhTy01zbem4Q/viewform'}
+          description={'¡Ojalá puedas venir!'}
+          title={'RSVP'}
+          redirect={'https://docs.google.com/forms/d/e/1FAIpQLScY_vanKoIq0eEwTBXVIWYETWRgGReUVc5Pl-9OzaAg6eSzfg/viewform?usp=sf_link'}
           buttonLabel={'Confirmar asistencia'}/>
       </section>
-      <section>
-        <SocialSection/>
-      </section>
-      <section className={'section-container thank-phrase'}>
-        <p>¡Gracias por estar en este momento tan importante!</p>
-        <p> Los queremos <span onClick={() => setImageSelected({image: '/images/sur-3.jpg', order: 4})}>😁</span></p>
-      </section>
+      {/*<section>*/}
+      {/*  <SocialSection/>*/}
+      {/*</section>*/}
+      {/*<section className={'section-container thank-phrase'}>*/}
+      {/*  <p>¡Gracias por estar en este momento tan importante!</p>*/}
+      {/*  <p> Los queremos <span onClick={() => setImageSelected({image: '/images/sur-3.jpg', order: 4})}>😁</span></p>*/}
+      {/*</section>*/}
       <footer>
-        <p>Made with ♥ by <a href={'https://www.instagram.com/tomifor/'} target={'_blank'}
+        <p>Desarrollado por <a href={'https://www.instagram.com/tomifor/'} target={'_blank'}
                              rel="noopener noreferrer">@tomifor</a></p>
       </footer>
-      <SecretModal order={imageSelected.order} image={imageSelected.image ? imageSelected.image : '/undraw_wedding.svg'}
-                   visible={!!imageSelected.image}
-                   onClose={() => setImageSelected({image: '', order: 0})}/>
+      {/*<SecretModal order={imageSelected.order} image={imageSelected.image ? imageSelected.image : '/undraw_wedding.svg'}*/}
+      {/*             visible={!!imageSelected.image}*/}
+      {/*             onClose={() => setImageSelected({image: '', order: 0})}/>*/}
     </div>
   )
 }

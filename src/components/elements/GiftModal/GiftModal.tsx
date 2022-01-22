@@ -13,8 +13,8 @@ type Props = {
 
 const GiftModal = ({visible, onClose}: Props) => {
   const toast = useToast();
-  const CBU = '1430001713001916770016';
-  const ALIAS = 'sofiymaxi';
+  const CBU = '1500303800030360650050';
+  const ALIAS = 'marcosytessy';
 
   const copy = (value: string, type: string) => {
     copyToClipboard(value);
@@ -36,11 +36,11 @@ const GiftModal = ({visible, onClose}: Props) => {
             <section>
               <Heading as={'h2'} size={'md'} className={styles.title}>Datos bancarios</Heading>
               <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>
-                <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta Brubank</strong></Heading>
-                <Image src={'/brubank.png'} height={15} width={13} alt={'Logo brubank'}/>
+                <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta HSBC</strong></Heading>
+                {/*<Image src={'/brubank.png'} height={15} width={13} alt={'Logo brubank'}/>*/}
 
               </Box>
-              <p>Titular: Maximo Bunge</p>
+              <p>Titular: Hertelendy Maria Teresa Julieta</p>
               <div className={styles.row}>
                 <p>CBU: {CBU}</p>
                 <span className={styles.btnCopy} onClick={() => copy(CBU, 'CBU')}><FiCopy/></span>
@@ -49,7 +49,7 @@ const GiftModal = ({visible, onClose}: Props) => {
                 <p>Alias: {ALIAS}</p>
                 <span className={styles.btnCopy} onClick={() => copy(ALIAS, 'Alias')}><FiCopy/></span>
               </div>
-              <p>Nº de cuenta: 1300191677001</p>
+              <p>Caja de ahorro: 3036065005</p>
             </section>
             {/*<section className={styles.giftList}>*/}
             {/*  <Heading as={'h2'} size={'md'} className={styles.title}>Lista de regalos</Heading>*/}

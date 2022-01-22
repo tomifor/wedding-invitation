@@ -8,7 +8,7 @@ type Props = {
 
 const CountdownSection = ({onClickEasterEgg}: Props) => {
 
-  const date = new Date('2022-02-19T17:00:00');
+  const date = new Date('2022-03-05T16:00:00');
   return (
     <div className={styles.container}>
       <Countdown date={date} renderer={({formatted, completed}) => {
