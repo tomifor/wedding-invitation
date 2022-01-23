@@ -10,7 +10,7 @@ function MyApp ({Component, pageProps}: AppProps) {
       <Head>
         <title>Marcos y Tessy</title>
         <meta name="description" content="Invitación de casamiento"/>
-        {/*<meta property="og:image" content="https://i.ibb.co/X87R0Qg/Captura-de-Pantalla-2021-12-30-a-la-s-22-39-00-2.png" />*/}
+        <meta property="og:image" content="https://i.ibb.co/q1GHC61/D93-CA480-328-B-4-C5-D-866-B-8-DFB20-F13-A61.png" />
       </Head>
       <ChakraProvider><Component {...pageProps} /></ChakraProvider>
     </div>
