@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
-import FullLayout from '../src/components/layouts/FullLayout'
+import AfterLayout from '../src/components/layouts/AfterLayout'
 
 const Home: NextPage = () => {
   return (
-    <FullLayout/>
+    <AfterLayout/>
   )
 }
 

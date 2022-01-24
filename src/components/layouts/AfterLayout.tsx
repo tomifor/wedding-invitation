@@ -22,15 +22,15 @@ const FullLayout = () => {
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Ceremonia'}
                      icon={<BiChurch size={48} color={'#c3b38f'} />}
-                     description={'La ceremonia se realizará el 5 de Marzo a las 17:00 horas en la Parroquia San Francisco Solano, Bella Vista.'}
+                     description={'La ceremonia es el 5 de Marzo a las 16:00 horas en la Parroquia San Francisco Solano, Bella Vista.'}
                      redirect={'https://goo.gl/maps/DniBzfSNiwQ2W35f8'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Fiesta'}
                      icon={<BiDrink size={48} color={'#c3b38f'}/>}
-                     description={'Te invitamos a nuestra fiesta a las 22:00 hs la Quinta Los Diez, Villa de Mayo. '}
-                     redirect={'https://goo.gl/maps/6tVzwmAFaPs25h6i6'}
+                     description={'Después de la ceremonia te esperamos en La Quinta de Bella Vista. 22:00 horas.'}
+                     redirect={'https://goo.gl/maps/KQDrvz1CkL9RxTHx5'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
         </div>
@@ -39,28 +39,21 @@ const FullLayout = () => {
         <Section
           icon={<BiGift size={48} color={'#d4efc8'} />}
           secondaryButton
-          description={'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}
+          description={'El mejor regalo es que nos acompañes en este día tan especial, pero si además nos querés hacer un regalo, podés ayudarnos con la Luna de Miel'}
           onClick={() => setGiftModalVisible(true)}
           buttonLabel={'Ver datos'}/>
         <GiftModal visible={giftModalVisible} onClose={() => setGiftModalVisible(false)}/>
       </section>
       <section className={'section-container assistance'}>
         <Section
-          description={'Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!'}
-          title={'CONFIRMACIÓN DE ASISTENCIA'}
-          redirect={'https://docs.google.com/forms/d/e/1FAIpQLSdaG6talvl9Q_btgpGMevFZFCXNNNunPFLOUVUhTy01zbem4Q/viewform'}
+          description={'¡Ojalá puedas venir!'}
+          title={'RSVP'}
+          redirect={'https://docs.google.com/forms/d/e/1FAIpQLScY_vanKoIq0eEwTBXVIWYETWRgGReUVc5Pl-9OzaAg6eSzfg/viewform?usp=sf_link'}
           buttonLabel={'Confirmar asistencia'}/>
       </section>
-      <section>
-        <SocialSection/>
-      </section>
-      <section className={'section-container thank-phrase'}>
-        <p>¡Gracias por estar en este momento tan importante!</p>
-        <p> Los queremos 😁</p>
-      </section>
       <footer>
-        <p>Made with ♥ by <a href={'https://www.instagram.com/tomifor/'} target={'_blank'}
-                             rel="noopener noreferrer">@tomifor</a></p>
+        <p>Desarrollado por <a href={'https://www.instagram.com/tomifor/'} target={'_blank'}
+                               rel="noopener noreferrer">@tomifor</a></p>
       </footer>
     </div>
   )
