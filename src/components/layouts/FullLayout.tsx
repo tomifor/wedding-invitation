@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Welcome from '../elements/Welcome/Welcome'
 import Section from '../elements/Section/Section'
 import CountdownSection from '../elements/CountdownSection/CountdownSection'
-import { BiChurch, BiDrink, BiGift } from 'react-icons/bi'
+import { BiChurch, BiDrink } from 'react-icons/bi'
 import SocialSection from '../elements/SocialSection/SocialSection'
-import GiftModal from '../elements/GiftModal/GiftModal'
 import SecretModal from '../elements/SecretModal/SecretModal'
+import GiftSection from '../modules/GiftSection/GiftSection'
+import Footer from '../modules/Footer/Footer'
 
 const FullLayout = () => {
-  const [giftModalVisible, setGiftModalVisible] = useState<boolean>(false);
   const [imageSelected, setImageSelected] = useState<{ image: string, order: number }>({image: '', order: 0});
-  const [giftTouched, setGiftTouched] = useState<number>(0);
 
-  useEffect(() => {
-    if(giftTouched >= 1) {
-      setImageSelected({image: '/images/cielo.jpg', order: 3})
-    }
-  }, [giftTouched])
 
   return (
     <div>
@@ -43,13 +37,7 @@ const FullLayout = () => {
         </div>
       </section>
       <section className={'section-container gift'}>
-        <Section
-          icon={<BiGift size={48} color={'#d4efc8'} onClick={() => setGiftTouched(v => v + 1)}/>}
-          secondaryButton
-          description={'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}
-          onClick={() => setGiftModalVisible(true)}
-          buttonLabel={'Ver datos'}/>
-        <GiftModal visible={giftModalVisible} onClose={() => setGiftModalVisible(false)}/>
+        <GiftSection description={'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}/>
       </section>
       <section className={'section-container assistance'}>
         <Section
@@ -65,13 +53,10 @@ const FullLayout = () => {
         <p>¡Gracias por estar en este momento tan importante!</p>
         <p> Los queremos <span onClick={() => setImageSelected({image: '/images/sur-3.jpg', order: 4})}>😁</span></p>
       </section>
-      <footer>
-        <p>Made with ♥ by <a href={'https://www.instagram.com/tomifor/'} target={'_blank'}
-                             rel="noopener noreferrer">@tomifor</a></p>
-      </footer>
       <SecretModal order={imageSelected.order} image={imageSelected.image ? imageSelected.image : '/undraw_wedding.svg'}
                    visible={!!imageSelected.image}
                    onClose={() => setImageSelected({image: '', order: 0})}/>
+      <Footer/>
     </div>
   )
 }
