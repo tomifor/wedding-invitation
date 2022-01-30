@@ -12,10 +12,10 @@ export const CONFIG = {
     phraseEnabled: true,
   },
   color: {
-    primary: '',
-    primaryBackground: '',
-    secondary: '',
-    secondaryBackground: ''
+    primary: '#0E426E',
+    primaryBackground: '#e5eff8',
+    secondary: '#AB4428',
+    secondaryBackground: '#fcf2f0'
   }
 }
 

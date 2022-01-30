@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Welcome from '../elements/Welcome/Welcome'
 import CountdownSection from '../modules/CountdownSection/CountdownSection'
 import SocialSection from '../modules/SocialSection/SocialSection'
-import SecretModal from '../elements/SecretModal/SecretModal'
 import GiftSection from '../modules/GiftSection/GiftSection'
 import PhraseSection from '../modules/PhraseSection/PhraseSection'
 import LocationSection from '../modules/LocationSection/LocationSection'
@@ -27,7 +26,8 @@ const FullLayout = () => {
       {welcomeEnabled && <Welcome/>}
       {countdownEnabled &&
         <section>
-          <CountdownSection date={countdown.date}/>
+          <CountdownSection date={countdown.date} bgColor={CONFIG.color.primaryBackground}
+                            textColor={CONFIG.color.primary}/>
         </section>}
       {locationEnabled &&
         <section className={'section-container'}>
