@@ -10,8 +10,6 @@ import RsvpSection from '../modules/rsvpSection/rsvpSection'
 import { CONFIG, SECTIONS } from '../../config/config'
 
 const FullLayout = () => {
-  const [imageSelected, setImageSelected] = useState<{ image: string, order: number }>({image: '', order: 0});
-
 
   const {
     welcomeEnabled,
@@ -62,9 +60,6 @@ const FullLayout = () => {
           <PhraseSection mainText={phrase.mainText}
                          secondaryText={phrase.secondaryText}/>
         </section>}
-      <SecretModal order={imageSelected.order} image={imageSelected.image ? imageSelected.image : '/undraw_wedding.svg'}
-                   visible={!!imageSelected.image}
-                   onClose={() => setImageSelected({image: '', order: 0})}/>
     </div>
   )
 }

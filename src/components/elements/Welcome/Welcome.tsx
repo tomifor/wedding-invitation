@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 type Props = {
   bgColor?: string;
-  onClickNames?(): void;
+  onClickNames? (): void;
   enableTextGesture?: boolean;
 }
 
@@ -21,16 +21,15 @@ const Welcome = ({bgColor, onClickNames, enableTextGesture}: Props) => {
   }, [])
 
 
-
-
   return (
-    <div className={styles.container} style={{backgroundColor: bgColor ?? '#f5efea'}}>
-      <div className={`${styles.backgroundImage} gradient-border`}>
-        {isMobile === false && <Image src={'/wedding-background-desktop.png'} priority layout="fill" objectFit="cover" alt={'Fondo de invitación'}/>}
-        {isMobile === true && <Image src={'/wedding-background-mobile.png'} priority layout="fill" objectFit="cover" alt={'Fondo de invitación'}/>}
-        <div className={styles.names}>
-          {showGesture && enableTextGesture && <span className={'touch-gesture'}/>}
-          <Image onClick={onClickNames}  src={'/names.png'} priority height={500} width={300}  alt={'Sofi y Maxi - 19/02/22'}/>
+    <div className={styles.container} style={{backgroundColor: bgColor ?? '#f8f5f3'}}>
+      <div>
+        <div className={`${styles.backgroundImage}`}>
+          {isMobile === false &&
+            <Image src={'/welcome-desktop.png'} priority layout="responsive" width={5002} height={3335}
+                   objectFit="cover" alt={'Invitación'}/>}
+          {isMobile === true &&
+            <Image src={'/welcome-mobile.png'} priority layout="fill" objectFit="cover" alt={'Invitación'}/>}
         </div>
       </div>
       <div className={'scrollDown'}/>

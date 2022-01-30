@@ -4,7 +4,8 @@
     position: relative;
     height: calc(100vh);
     width: calc(100vw);
-
+    max-width: 1200px;
+    margin: auto;
   }
   .names {
     width: 100%;
