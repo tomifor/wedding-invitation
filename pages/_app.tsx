@@ -3,16 +3,23 @@ import type { AppProps } from 'next/app'
 import 'primeflex/primeflex.min.css';
 import { ChakraProvider } from '@chakra-ui/react'
 import Head from 'next/head'
+import Footer from '../src/components/modules/Footer/Footer'
+import React from 'react'
+import { CONFIG } from '../src/config/config'
 
 function MyApp ({Component, pageProps}: AppProps) {
+
+  const {title, description, metaImagePreview} = CONFIG;
+
   return (
     <div>
       <Head>
-        <title>Sofi y Maxi</title>
-        <meta name="description" content="Invitación de casamiento"/>
-        <meta property="og:image" content="https://i.ibb.co/X87R0Qg/Captura-de-Pantalla-2021-12-30-a-la-s-22-39-00-2.png" />
+        <title>{`${title} - Invify`}</title>
+        <meta name="description" content={description}/>
+        <meta property="og:image" content={metaImagePreview} />
       </Head>
       <ChakraProvider><Component {...pageProps} /></ChakraProvider>
+      <Footer/>
     </div>
   )
 }

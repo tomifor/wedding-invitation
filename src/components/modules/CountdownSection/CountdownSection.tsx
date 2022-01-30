@@ -4,21 +4,25 @@ import styles from './CountdownSection.module.scss';
 
 type Props = {
   onClickEasterEgg?(): void;
+  date: string;
+  title?: string;
+  bgColor?: string;
+  textColor?: string;
 }
 
-const CountdownSection = ({onClickEasterEgg}: Props) => {
+const CountdownSection = ({date, onClickEasterEgg, title = 'Faltan', bgColor = '#f8f9f7', textColor = '#69755e'}: Props) => {
 
-  const date = new Date('2022-02-19T17:00:00');
+  const dateParsed = new Date(date);
   return (
-    <div className={styles.container}>
-      <Countdown date={date} renderer={({formatted, completed}) => {
+    <div className={styles.container} style={{backgroundColor: bgColor, color: textColor}}>
+      <Countdown date={dateParsed} renderer={({formatted, completed}) => {
         const {days, hours, minutes, seconds} = formatted;
         if (completed) {
-          return <p>Es HOY!</p>;
+          return <p className={styles.completed}>Es HOY!</p>;
         }
         return (
           <div>
-            <p className={styles.title}>Faltan</p>
+            <p className={styles.title}>{title}</p>
             <div className={styles.counterContainer}>
               <div className={styles.timeContainer}>
                 <p className={styles.timeValue}>{days}</p>

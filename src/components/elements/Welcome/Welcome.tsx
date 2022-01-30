@@ -3,11 +3,12 @@ import styles from './Welcome.module.scss';
 import Image from 'next/image';
 
 type Props = {
+  bgColor?: string;
   onClickNames?(): void;
   enableTextGesture?: boolean;
 }
 
-const Welcome = ({onClickNames, enableTextGesture}: Props) => {
+const Welcome = ({bgColor, onClickNames, enableTextGesture}: Props) => {
   const [isMobile, setIsMobile] = useState<boolean | undefined>(undefined);
   const [showGesture, setShowGesture] = useState<boolean>(false);
 
@@ -23,7 +24,7 @@ const Welcome = ({onClickNames, enableTextGesture}: Props) => {
 
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{backgroundColor: bgColor ?? '#f5efea'}}>
       <div className={`${styles.backgroundImage} gradient-border`}>
         {isMobile === false && <Image src={'/wedding-background-desktop.png'} priority layout="fill" objectFit="cover" alt={'Fondo de invitación'}/>}
         {isMobile === true && <Image src={'/wedding-background-mobile.png'} priority layout="fill" objectFit="cover" alt={'Fondo de invitación'}/>}
