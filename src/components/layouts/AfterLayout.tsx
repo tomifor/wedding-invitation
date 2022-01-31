@@ -48,7 +48,7 @@ const FullLayout = () => {
         <Section
           description={'¡Ojalá puedas venir!'}
           title={'RSVP'}
-          redirect={'https://docs.google.com/forms/d/e/1FAIpQLScY_vanKoIq0eEwTBXVIWYETWRgGReUVc5Pl-9OzaAg6eSzfg/viewform?usp=sf_link'}
+          redirect={'https://docs.google.com/forms/d/e/1FAIpQLSdGav4wNcOY9FKH5HlBGBak-ur_7u_dbVZ0iLd3IghzS6uKUQ/viewform?usp=sf_link'}
           buttonLabel={'Confirmar asistencia'}/>
       </section>
       <footer>
