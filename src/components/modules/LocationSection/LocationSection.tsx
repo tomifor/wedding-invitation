@@ -21,14 +21,14 @@ const LocationSection = ({ceremonyDescription, ceremonyUrl, ceremonyTitle, onCli
     <Box className={'grid'}>
       <div className={'col-12 sm:col-12 md:col-6'}>
         <Section title={ceremonyTitle ?? 'Ceremonia'}
-                 icon={<BiChurch size={48} color={'#c3b38f'} onClick={onClickEasterEgg}/>}
+                 icon={<BiChurch size={48} color={'#c3958f'} onClick={onClickEasterEgg}/>}
                  description={ceremonyDescription}
                  redirect={ceremonyUrl}
                  buttonLabel={ceremonyUrlLabel ?? 'Ver en Google Maps'}/>
       </div>
       <div className={'col-12 sm:col-12 md:col-6'}>
         <Section title={partyTitle ?? 'Fiesta'}
-                 icon={<BiDrink size={48} color={'#c3b38f'}/>}
+                 icon={<BiDrink size={48} color={'#c3958f'}/>}
                  description={partyDescription}
                  redirect={partyUrl}
                  buttonLabel={partyUrlLabel ?? 'Ver en Google Maps'}/>

@@ -1,6 +1,6 @@
-$primary-color: #c3b38f;
-$primary-background: lighten(#c3b38f, 30);
-$primary-color-dark: darken(#c3b38f, 10);
+$primary-color: #c3978f;
+$primary-background: lighten(#c3978f, 30);
+$primary-color-dark: darken(#c3978f, 10);
 
 html,
 body {
@@ -58,7 +58,7 @@ a {
 
 .btn-primary {
   cursor: pointer;
-  color: #5b5342;
+  color: #5b4642;
   background: $primary-background;
   border: transparent;
   padding: 0.75rem 1.25rem;
@@ -74,7 +74,7 @@ a {
 
 .btn-secondary {
   cursor: pointer;
-  color: #657559;
+  color: #755a59;
   background: #ffffff;
   border: 1px solid white;
   padding: 0.75rem 1.25rem;
@@ -82,7 +82,7 @@ a {
   transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
   border-radius: 2rem;
   &:hover {
-    background: lighten(#6e7b62, 53);
+    background: lighten(#7b6562, 53);
   }
 }
 

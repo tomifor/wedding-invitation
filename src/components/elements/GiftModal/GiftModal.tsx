@@ -13,8 +13,8 @@ type Props = {
 
 const GiftModal = ({visible, onClose}: Props) => {
   const toast = useToast();
-  const CBU = '1430001713001916770016';
-  const ALIAS = 'sofiymaxi';
+  const CBU = '';
+  const ALIAS = '';
 
   const copy = (value: string, type: string) => {
     copyToClipboard(value);
@@ -40,7 +40,7 @@ const GiftModal = ({visible, onClose}: Props) => {
                 <Image src={'/brubank.png'} height={15} width={13} alt={'Logo brubank'}/>
 
               </Box>
-              <p>Titular: Maximo Bunge</p>
+              <p>Titular:</p>
               <div className={styles.row}>
                 <p>CBU: {CBU}</p>
                 <span className={styles.btnCopy} onClick={() => copy(CBU, 'CBU')}><FiCopy/></span>
@@ -49,7 +49,7 @@ const GiftModal = ({visible, onClose}: Props) => {
                 <p>Alias: {ALIAS}</p>
                 <span className={styles.btnCopy} onClick={() => copy(ALIAS, 'Alias')}><FiCopy/></span>
               </div>
-              <p>Nº de cuenta: 1300191677001</p>
+              <p>Nº de cuenta: </p>
             </section>
             {/*<section className={styles.giftList}>*/}
             {/*  <Heading as={'h2'} size={'md'} className={styles.title}>Lista de regalos</Heading>*/}

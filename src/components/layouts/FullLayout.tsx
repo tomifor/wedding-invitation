@@ -40,7 +40,7 @@ const FullLayout = () => {
         </section>}
       {giftEnabled &&
         <section className={'section-container'}>
-          <GiftSection description={gift.description}/>
+          <GiftSection description={gift.description} bgColor={gift.bgColor} iconColor={gift.iconColor}/>
         </section>}
       {rsvpEnabled &&
         <section className={'section-container'}>
@@ -52,12 +52,15 @@ const FullLayout = () => {
       {socialEnabled &&
         <section>
           <SocialSection
+            textColor={'white'}
             hashtag={social.hashtag}
             description={social.description}/>
         </section>}
       {phraseEnabled &&
         <section>
           <PhraseSection mainText={phrase.mainText}
+                         bgColor={phrase.bgColor}
+                         textColor={phrase.textColor}
                          secondaryText={phrase.secondaryText}/>
         </section>}
     </div>

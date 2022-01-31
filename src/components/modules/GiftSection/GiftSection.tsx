@@ -8,18 +8,19 @@ type Props = {
   description?: string;
   buttonLabel?: string;
   bgColor?: string;
+  iconColor?: string;
   textColor?: string;
   onClickIcon?(): void;
 }
 
-const GiftSection = ({description, buttonLabel, onClickIcon, bgColor, textColor}: Props) => {
+const GiftSection = ({description, buttonLabel, onClickIcon, bgColor, textColor, iconColor}: Props) => {
   const [giftModalVisible, setGiftModalVisible] = useState<boolean>(false);
 
 
   return (
     <div style={{backgroundColor: bgColor ?? '#657559', color: textColor ?? '#fff'}}>
       <Section
-        icon={<BiGift size={48} color={'#d4efc8'} onClick={onClickIcon}/>}
+        icon={<BiGift size={48} color={iconColor ?? '#d4efc8'} onClick={onClickIcon}/>}
         secondaryButton
         description={description}
         onClick={() => setGiftModalVisible(true)}

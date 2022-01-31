@@ -31,6 +31,8 @@ export const SECTIONS = {
   },
   gift: {
     description: 'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...',
+    bgColor: '#0c426e',
+    iconColor: '#cfeaff',
   },
   rsvp: {
     description: 'Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!',
@@ -43,5 +45,7 @@ export const SECTIONS = {
   phrase: {
     mainText: '¡Gracias por estar en este viaje tan importante!',
     secondaryText: 'Los queremos 😁✈️',
+    textColor: '#0c426e',
+    bgColor: '#f3f8ff',
   }
 }
