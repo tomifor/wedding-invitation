@@ -29,7 +29,7 @@ const FullLayout = () => {
           <div className={'col-12 sm:col-12 md:col-6'}>
             <Section title={'Fiesta'}
                      icon={<BiDrink size={48} color={'#c3b38f'}/>}
-                     description={'Después de la ceremonia te esperamos en La Quinta de Bella Vista. 22:00 horas.'}
+                     description={'Después de la ceremonia te esperamos en La Quinta de Bella Vista. 20:30 horas.'}
                      redirect={'https://goo.gl/maps/KQDrvz1CkL9RxTHx5'}
                      buttonLabel={'Ver en Google Maps'}/>
           </div>
