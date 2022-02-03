@@ -8,6 +8,8 @@ type Props = {
   buttonLabel?: string;
   secondaryButton?: boolean;
   redirect?: string;
+  bgColor?: string;
+  textColor?: string;
   onClick? (): void;
 }
 
@@ -18,11 +20,13 @@ const Section = ({
                    icon,
                    description,
                    onClick,
+                   bgColor,
+                   textColor,
                    secondaryButton
                  }: Props) => {
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{backgroundColor: bgColor ?? 'transparent', color: textColor ?? '#000'}}>
       {icon}
       <p className={styles.title}>{title}</p>
       <p className={styles.description}>{description}</p>

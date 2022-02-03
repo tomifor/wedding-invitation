@@ -9,6 +9,7 @@ export const CONFIG = {
     giftEnabled: true,
     socialEnabled: false,
     rsvpEnabled: true,
+    covidEnabled: true,
     phraseEnabled: true,
   },
   color: {

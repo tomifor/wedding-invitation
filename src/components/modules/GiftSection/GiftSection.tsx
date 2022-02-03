@@ -22,6 +22,7 @@ const GiftSection = ({description, buttonLabel, onClickIcon, bgColor, textColor,
       <Section
         icon={<BiGift size={48} color={iconColor ?? '#d4efc8'} onClick={onClickIcon}/>}
         secondaryButton
+        textColor={'#fff'}
         description={description}
         onClick={() => setGiftModalVisible(true)}
         buttonLabel={buttonLabel ?? 'Ver datos'}/>

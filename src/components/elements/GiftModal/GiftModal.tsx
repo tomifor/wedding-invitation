@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay } from '@chakra-ui/modal'
+import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay } from '@chakra-ui/react'
 import styles from './GiftModal.module.scss';
 import { Box, Heading, Image, Text, useToast } from '@chakra-ui/react'
 import { copyToClipboard } from '../../../utils/copyToClipboard'
@@ -39,7 +39,7 @@ const GiftModal = ({visible, onClose}: Props) => {
               <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>
                 <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta en pesos</strong></Heading>
               </Box>
-              <p>Titular:</p>
+              {/*<p>Titular:</p>*/}
               <div className={styles.row}>
                 <p>CBU: {CBU}</p>
                 <span className={styles.btnCopy} onClick={() => copy(CBU, 'CBU')}><FiCopy/></span>
@@ -53,7 +53,7 @@ const GiftModal = ({visible, onClose}: Props) => {
                    marginTop={'12px'}>
                 <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta en dolares</strong></Heading>
               </Box>
-              <p>Titular:</p>
+              {/*<p>Titular:</p>*/}
               <div className={styles.row}>
                 <p>CBU: {CBU_USD}</p>
                 <span className={styles.btnCopy} onClick={() => copy(CBU_USD, 'CBU')}><FiCopy/></span>
@@ -69,7 +69,7 @@ const GiftModal = ({visible, onClose}: Props) => {
             {/*  <a>Fravega</a>*/}
             {/*</section>*/}
             <section>
-              <Text textAlign={'center'} fontWeight={'bold'} marginTop={'20px'}>Sino podes encontrar una alcancía en la
+              <Text textAlign={'center'} fontWeight={'bold'} marginTop={'20px'}>También podés encontrar una alcancía en la
                 recepción del salón</Text>
               <Image src={'/pig.svg'} height={100} width={200} margin={'10px auto'} alt={'Dibujo de alcancia'}/>
             </section>

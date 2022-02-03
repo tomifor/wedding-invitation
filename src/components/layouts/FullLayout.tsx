@@ -7,6 +7,7 @@ import PhraseSection from '../modules/PhraseSection/PhraseSection'
 import LocationSection from '../modules/LocationSection/LocationSection'
 import RsvpSection from '../modules/rsvpSection/rsvpSection'
 import { CONFIG, SECTIONS } from '../../config/config'
+import CovidSection from '../modules/CovidSection/CovidSection'
 
 const FullLayout = () => {
 
@@ -17,7 +18,8 @@ const FullLayout = () => {
     phraseEnabled,
     socialEnabled,
     giftEnabled,
-    rsvpEnabled
+    rsvpEnabled,
+    covidEnabled
   } = CONFIG.sectionsEnabled;
 
   const {countdown, location, gift, rsvp, social, phrase} = SECTIONS;
@@ -56,6 +58,9 @@ const FullLayout = () => {
             hashtag={social.hashtag}
             description={social.description}/>
         </section>}
+      {
+        covidEnabled && <CovidSection />
+      }
       {phraseEnabled &&
         <section>
           <PhraseSection mainText={phrase.mainText}
