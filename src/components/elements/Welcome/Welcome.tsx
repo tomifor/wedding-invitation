@@ -3,12 +3,14 @@ import styles from './Welcome.module.scss';
 import Image from 'next/image';
 
 type Props = {
+  imageMobile: string;
+  imageDesktop: string;
   bgColor?: string;
   onClickNames? (): void;
   enableTextGesture?: boolean;
 }
 
-const Welcome = ({bgColor, onClickNames, enableTextGesture}: Props) => {
+const Welcome = ({bgColor, onClickNames, enableTextGesture, imageMobile, imageDesktop}: Props) => {
   const [isMobile, setIsMobile] = useState<boolean | undefined>(undefined);
   const [showGesture, setShowGesture] = useState<boolean>(false);
 
@@ -26,10 +28,10 @@ const Welcome = ({bgColor, onClickNames, enableTextGesture}: Props) => {
       <div>
         <div className={`${styles.backgroundImage}`}>
           {isMobile === false &&
-            <Image src={'/welcome-desktop.png'} priority layout="responsive" width={5002} height={3335}
+            <Image src={imageDesktop} priority layout="responsive" width={5002} height={3335}
                    objectFit="cover" alt={'Invitación'}/>}
           {isMobile === true &&
-            <Image src={'/welcome-mobile.png'} priority layout="fill" objectFit="cover" alt={'Invitación'}/>}
+            <Image src={imageMobile} priority layout="fill" objectFit="cover" alt={'Invitación'}/>}
         </div>
       </div>
       <div className={'scrollDown'}/>

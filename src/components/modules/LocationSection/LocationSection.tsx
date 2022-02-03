@@ -19,20 +19,20 @@ const LocationSection = ({ceremonyDescription, ceremonyUrl, ceremonyTitle, onCli
 
   return (
     <Box className={'grid'}>
-      <div className={'col-12 sm:col-12 md:col-6'}>
+      {ceremonyDescription && <div className={'col-12 sm:col-12 md:col-6'}>
         <Section title={ceremonyTitle ?? 'Ceremonia'}
                  icon={<BiChurch size={48} color={'#c3958f'} onClick={onClickEasterEgg}/>}
                  description={ceremonyDescription}
                  redirect={ceremonyUrl}
                  buttonLabel={ceremonyUrlLabel ?? 'Ver en Google Maps'}/>
-      </div>
-      <div className={'col-12 sm:col-12 md:col-6'}>
+      </div>}
+      {partyDescription && <div className={`col-12 sm:col-12 ${ceremonyDescription ? 'md:col-6' : 'md:col-12'}`}>
         <Section title={partyTitle ?? 'Fiesta'}
                  icon={<BiDrink size={48} color={'#c3958f'}/>}
                  description={partyDescription}
                  redirect={partyUrl}
                  buttonLabel={partyUrlLabel ?? 'Ver en Google Maps'}/>
-      </div>
+      </div>}
     </Box>
   )
 }

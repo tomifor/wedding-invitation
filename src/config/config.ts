@@ -7,7 +7,7 @@ export const CONFIG = {
     countdownEnabled: true,
     locationEnabled: true,
     giftEnabled: true,
-    socialEnabled: true,
+    socialEnabled: false,
     rsvpEnabled: true,
     phraseEnabled: true,
   },
@@ -36,15 +36,15 @@ export const SECTIONS = {
   },
   rsvp: {
     description: 'Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!',
-    redirect: 'https://docs.google.com/forms/d/e/1FAIpQLSduTqecACOeQf0cMByGBZsdmq8dBcpYS7perNIYAW0t3NR9ZQ/viewform',
+    redirect: 'https://docs.google.com/forms/d/e/1FAIpQLSfWR_JumJlXj1o-_CCAxdZueXGuya7FdVGf3VOQVSv2D3ENaA/viewform',
   },
   social: {
     hashtag: '#ESTEFIYPABLO',
     description: 'No olvides etiquetarnos en tus fotos o videos de Instagram con nuestro hashtag!'
   },
   phrase: {
-    mainText: '¡Gracias por estar en este viaje tan importante!',
-    secondaryText: 'Los queremos 😁✈️',
+    mainText: '¡Gracias por acompañarnos en este viaje tan importante!',
+    secondaryText: '',
     textColor: '#0c426e',
     bgColor: '#f3f8ff',
   }

@@ -8,7 +8,7 @@ import LocationSection from '../modules/LocationSection/LocationSection'
 import RsvpSection from '../modules/rsvpSection/rsvpSection'
 import { CONFIG, SECTIONS } from '../../config/config'
 
-const FullLayout = () => {
+const AfterLayout = () => {
 
   const {
     welcomeEnabled,
@@ -32,9 +32,7 @@ const FullLayout = () => {
       {locationEnabled &&
         <section className={'section-container'}>
           <LocationSection
-            ceremonyDescription={location.ceremonyDescription}
-            ceremonyUrl={location.ceremonyUrl}
-            partyDescription={location.partyDescription}
+            partyDescription={'La fiesta se realizará en La Quinta de Bella Vista. 00:00 horas.'}
             partyUrl={location.partyUrl}
           />
         </section>}
@@ -46,7 +44,7 @@ const FullLayout = () => {
         <section className={'section-container'}>
           <RsvpSection
             description={rsvp.description}
-            redirect={rsvp.redirect}
+            redirect={'https://docs.google.com/forms/d/e/1FAIpQLScOCEm1BgTri67ymuHtnZpGgXAgJV60hvwKxababADXcGlW1w/viewform?usp=sf_link'}
           />
         </section>}
       {socialEnabled &&
@@ -67,4 +65,4 @@ const FullLayout = () => {
   )
 }
 
-export default FullLayout;
+export default AfterLayout;
