@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay } from '@chakra-ui/modal'
+import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay } from '@chakra-ui/react'
 import { Box, Heading, Text } from '@chakra-ui/react'
 import Image from 'next/image';
 
