@@ -1,7 +1,7 @@
 export const CONFIG = {
   title: 'Estefi y Pablo',
   description: 'Invitación de casamiento',
-  metaImagePreview: '',
+  metaImagePreview: 'https://i.ibb.co/n6GpzLV/estefipablo-preview-2.jpg',
   sectionsEnabled: {
     welcomeEnabled: true,
     countdownEnabled: true,

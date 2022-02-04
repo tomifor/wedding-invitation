@@ -25,7 +25,7 @@ const AfterLayout = () => {
   const {countdown, location, gift, rsvp, social, phrase} = SECTIONS;
   return (
     <div>
-      {welcomeEnabled && <Welcome imageDesktop={'/welcome-desktop.png'} imageMobile={'/welcome-mobile.png'}/>}
+      {welcomeEnabled && <Welcome imageDesktop={'/welcome-after-desktop.png'} imageMobile={'/welcome-after-mobile.png'}/>}
       {countdownEnabled &&
         <section>
           <CountdownSection date={countdown.date} bgColor={CONFIG.color.primaryBackground}
