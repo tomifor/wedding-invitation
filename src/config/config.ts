@@ -31,7 +31,7 @@ export const SECTIONS = {
     partyUrl: 'https://goo.gl/maps/c29cSzmBaPrWYSuF9',
   },
   gift: {
-    description: 'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...',
+    description: 'Si deseás realizarnos un regalo podés...',
     bgColor: '#0c426e',
     iconColor: '#cfeaff',
   },
