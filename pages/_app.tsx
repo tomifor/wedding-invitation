@@ -10,7 +10,7 @@ function MyApp ({Component, pageProps}: AppProps) {
       <Head>
         <title>Tessy & Marcos</title>
         <meta name="description" content="Invitación de casamiento"/>
-        <meta property="og:image" content="https://i.ibb.co/q1GHC61/D93-CA480-328-B-4-C5-D-866-B-8-DFB20-F13-A61.png" />
+        <meta property="og:image" content="https://iili.io/02uaIe.png" />
       </Head>
       <ChakraProvider><Component {...pageProps} /></ChakraProvider>
     </div>
@@ -18,3 +18,4 @@ function MyApp ({Component, pageProps}: AppProps) {
 }
 
 export default MyApp
+
