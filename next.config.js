@@ -22,6 +22,7 @@ const securityHeaders = [
 module.exports = {
   reactStrictMode: true,
   poweredByHeader: false,
+  swcMinify: true,
   async headers() {
     return [
       {
