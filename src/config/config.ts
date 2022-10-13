@@ -31,6 +31,10 @@ export const SECTIONS = {
   },
   gift: {
     description: 'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...',
+    accounts: [
+      {cbu: '15003038-00030361002478', alias: 'vickygarcea', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '', accountType: 'pesos'},
+      {cbu: '15003038-00030380705596', alias: 'vickygarceausd', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '', accountType: 'dólares'}
+    ]
   },
   rsvp: {
     description: 'Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!',
@@ -38,6 +42,7 @@ export const SECTIONS = {
   },
   social: {
     hashtag: '#VICKYySANTI',
+    url: 'https://www.instagram.com/explore/tags/vickyysanti',
     description: 'No olvides etiquetarnos en tus fotos o videos de Instagram con nuestro hashtag!'
   },
   phrase: {

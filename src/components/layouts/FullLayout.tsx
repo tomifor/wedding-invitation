@@ -29,7 +29,7 @@ const FullLayout = () => {
       {welcomeEnabled && <Welcome/>}
       {countdownEnabled &&
         <section>
-          <CountdownSection date={countdown.date}/>
+          <CountdownSection date={countdown.date} bgColor={'#eef1fa'} textColor={'#667f9b'}/>
         </section>}
       {locationEnabled &&
         <section className={'section-container'}>
@@ -42,7 +42,7 @@ const FullLayout = () => {
         </section>}
       {giftEnabled &&
         <section className={'section-container'}>
-          <GiftSection description={gift.description}/>
+          <GiftSection description={gift.description} bgColor={'#595B78'} iconColor={'#f7f7ff'}/>
         </section>}
       {rsvpEnabled &&
         <section className={'section-container'}>
@@ -55,6 +55,7 @@ const FullLayout = () => {
         <section>
           <SocialSection
             hashtag={social.hashtag}
+            url={social.url}
             description={social.description}/>
         </section>}
       {phraseEnabled &&

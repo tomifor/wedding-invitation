@@ -5,6 +5,7 @@ import { Box, Heading, useToast } from '@chakra-ui/react'
 import { copyToClipboard } from '../../../utils/copyToClipboard'
 import { FiCopy } from 'react-icons/fi';
 import Image from 'next/image';
+import { SECTIONS } from '../../../config/config'
 
 type Props = {
   visible: boolean;
@@ -13,8 +14,7 @@ type Props = {
 
 const GiftModal = ({visible, onClose}: Props) => {
   const toast = useToast();
-  const CBU = '1430001713001916770016';
-  const ALIAS = 'sofiymaxi';
+  const ACCOUNTS = SECTIONS.gift.accounts;
 
   const copy = (value: string, type: string) => {
     copyToClipboard(value);
@@ -35,26 +35,25 @@ const GiftModal = ({visible, onClose}: Props) => {
           <div className={styles.container}>
             <section>
               <Heading as={'h2'} size={'md'} className={styles.title}>Datos bancarios</Heading>
-              <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>
-                <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta Brubank</strong></Heading>
-                <Image src={'/brubank.png'} height={15} width={13} alt={'Logo brubank'}/>
-
-              </Box>
-              <p>Titular: Maximo Bunge</p>
-              <div className={styles.row}>
-                <p>CBU: {CBU}</p>
-                <span className={styles.btnCopy} onClick={() => copy(CBU, 'CBU')}><FiCopy/></span>
-              </div>
-              <div className={styles.row}>
-                <p>Alias: {ALIAS}</p>
-                <span className={styles.btnCopy} onClick={() => copy(ALIAS, 'Alias')}><FiCopy/></span>
-              </div>
-              <p>Nº de cuenta: 1300191677001</p>
+              {ACCOUNTS.map(account => (
+                <Box key={account.alias} marginBottom={'20px'}>
+                  <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>
+                    <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta {account.bank}</strong></Heading>
+                    <Image src={`/banks/${account.logo}`} height={25} width={35} alt={`Logo ${account.bank}`}/>
+                  </Box>
+                  <p>Titular: {account.accountHolder}</p>
+                  <div className={styles.row}>
+                    <p>CBU: {account.cbu}</p>
+                    <span className={styles.btnCopy} onClick={() => copy(account.cbu, 'CBU')}><FiCopy/></span>
+                  </div>
+                  <div className={styles.row}>
+                    <p>Alias: {account.alias}</p>
+                    <span className={styles.btnCopy} onClick={() => copy(account.alias, 'Alias')}><FiCopy/></span>
+                  </div>
+                  <p>Nº de cuenta: {account.accountNumber}</p>
+                </Box>
+              ))}
             </section>
-            {/*<section className={styles.giftList}>*/}
-            {/*  <Heading as={'h2'} size={'md'} className={styles.title}>Lista de regalos</Heading>*/}
-            {/*  <a>Fravega</a>*/}
-            {/*</section>*/}
           </div>
         </ModalBody>
       </ModalContent>
