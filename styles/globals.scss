@@ -1,5 +1,5 @@
 $primary-color: #c3b38f;
-$primary-background: lighten(#c3b38f, 30);
+$primary-background: lighten(#415743, 64);
 $primary-color-dark: darken(#c3b38f, 10);
 
 html,
@@ -30,8 +30,8 @@ a {
   text-shadow: none;
   width: 30px;
   height: 30px;
-  border-bottom: 4px solid #88642e;
-  border-right: 4px solid #88642e;
+  border-bottom: 4px solid #79B1BE;
+  border-right: 4px solid #79B1BE;
   z-index: 9;
   left: calc(50% - 15px);
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
@@ -58,7 +58,7 @@ a {
 
 .btn-primary {
   cursor: pointer;
-  color: #5b5342;
+  color: #415743;
   background: $primary-background;
   border: transparent;
   padding: 0.75rem 1.25rem;
@@ -74,7 +74,7 @@ a {
 
 .btn-secondary {
   cursor: pointer;
-  color: #657559;
+  color: #596275;
   background: #ffffff;
   border: 1px solid white;
   padding: 0.75rem 1.25rem;
@@ -113,8 +113,9 @@ span.touch-gesture {
   border-radius: 50%;
   margin: 0 5px;
   position: absolute;
-  z-index: 0;
-  background-color: #d9caa9;
+  z-index: 1;
+  opacity: 0.6;
+  background-color: #a0d9e7;
   transform: scale(0.8);
 }
 

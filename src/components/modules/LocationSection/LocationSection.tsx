@@ -28,7 +28,7 @@ const LocationSection = ({ceremonyDescription, ceremonyUrl, ceremonyTitle, onCli
       {/*</div>*/}
         <Section title={partyTitle ?? 'Fiesta'}
                  onClick={onClickEasterEgg}
-                 icon={<BiDrink size={48} color={'#c3b38f'}/>}
+                 icon={<BiDrink size={48} color={'#82AE87'}/>}
                  description={partyDescription}
                  redirect={partyUrl}
                  buttonLabel={partyUrlLabel ?? 'Ver en Google Maps'}/>

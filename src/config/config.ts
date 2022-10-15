@@ -32,8 +32,8 @@ export const SECTIONS = {
   gift: {
     description: 'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...',
     accounts: [
-      {cbu: '15003038-00030361002478', alias: 'vickygarcea', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '', accountType: 'pesos'},
-      {cbu: '15003038-00030380705596', alias: 'vickygarceausd', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '', accountType: 'dólares'}
+      {cbu: '15003038-00030361002478', alias: 'vickygarcea', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '3036100247', accountType: 'pesos'},
+      {cbu: '15003038-00030380705596', alias: 'vickygarceausd', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '3038070559', accountType: 'dólares'}
     ]
   },
   rsvp: {
@@ -46,7 +46,7 @@ export const SECTIONS = {
     description: 'No olvides etiquetarnos en tus fotos o videos de Instagram con nuestro hashtag!'
   },
   phrase: {
-    mainText: '¡Gracias por acompañarnos ❣️!',
+    mainText: '¡Gracias por acompañarnos ',
     secondaryText: '',
   }
 }

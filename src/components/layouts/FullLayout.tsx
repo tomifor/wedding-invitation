@@ -26,10 +26,10 @@ const FullLayout = () => {
   const {countdown, location, gift, rsvp, social, phrase} = SECTIONS;
   return (
     <div>
-      {welcomeEnabled && <Welcome/>}
+      {welcomeEnabled && <Welcome enableTextGesture onClickNames={() => setImageSelected({image: '/images/easter-1.jpeg', order: 0})}/>}
       {countdownEnabled &&
         <section>
-          <CountdownSection date={countdown.date} bgColor={'#eef1fa'} textColor={'#667f9b'}/>
+          <CountdownSection date={countdown.date} bgColor={'#eef1fa'} textColor={'#667f9b'} onClickEasterEgg={() => setImageSelected({image: '/images/easter-2.jpeg', order: 1})}/>
         </section>}
       {locationEnabled &&
         <section className={'section-container'}>
@@ -42,7 +42,7 @@ const FullLayout = () => {
         </section>}
       {giftEnabled &&
         <section className={'section-container'}>
-          <GiftSection description={gift.description} bgColor={'#595B78'} iconColor={'#f7f7ff'}/>
+          <GiftSection description={gift.description} onClickIcon={() => setImageSelected({image: '/images/easter-3.jpeg', order: 2})} bgColor={'#595B78'} iconColor={'#f7f7ff'}/>
         </section>}
       {rsvpEnabled &&
         <section className={'section-container'}>
@@ -56,11 +56,16 @@ const FullLayout = () => {
           <SocialSection
             hashtag={social.hashtag}
             url={social.url}
+            bgColor={'#e8e8f3'}
+            textColor={'#595B78'}
             description={social.description}/>
         </section>}
       {phraseEnabled &&
         <section>
           <PhraseSection mainText={phrase.mainText}
+                         bgColor={'#fafbff'}
+                         textColor={'#667f9b'}
+                         onClickEaster={() => setImageSelected({image: '/images/easter-5.jpeg', order: 4})}
                          secondaryText={phrase.secondaryText}/>
         </section>}
       <SecretModal order={imageSelected.order} image={imageSelected.image ? imageSelected.image : '/undraw_wedding.svg'}
