@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Countdown from 'react-countdown';
 import styles from './CountdownSection.module.scss';
 
@@ -11,11 +11,17 @@ type Props = {
 }
 
 const CountdownSection = ({date, onClickEasterEgg, title = 'Faltan', bgColor = '#f8f9f7', textColor = '#69755e'}: Props) => {
+  const [dateParsed, setDate] = useState<Date | undefined>();
 
-  const dateParsed = new Date(date);
+  useEffect(() => {
+    if(date) {
+      setDate(new Date(date))
+    }
+  }, [])
+
   return (
     <div className={styles.container} style={{backgroundColor: bgColor, color: textColor}}>
-      <Countdown date={dateParsed} renderer={({formatted, completed}) => {
+      {dateParsed && <Countdown date={dateParsed} renderer={({formatted, completed}) => {
         const {days, hours, minutes, seconds} = formatted;
         if (completed) {
           return <p className={styles.completed}>Es HOY!</p>;
@@ -43,7 +49,7 @@ const CountdownSection = ({date, onClickEasterEgg, title = 'Faltan', bgColor = '
             </div>
           </div>
         )
-      }}/>
+      }}/>}
     </div>
   )
 }
