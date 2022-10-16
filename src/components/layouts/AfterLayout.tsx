@@ -25,7 +25,7 @@ const AfterLayout = () => {
             <LocationSection
               ceremonyDescription={location.ceremonyDescription}
               ceremonyUrl={location.ceremonyUrl}
-              partyDescription={'La fiesta se realizará el 20 de noviembre a las 00:00 en el Buenos Aires Rowing Club, Tigre.'}
+              partyDescription={'La fiesta se realizará el 20 de noviembre a las 23:55 en el Buenos Aires Rowing Club, Tigre.'}
               partyUrl={location.partyUrl}
             />
           </section>
