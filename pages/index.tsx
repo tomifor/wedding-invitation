@@ -1,10 +1,8 @@
 import type { NextPage } from 'next'
-import FullLayout from '../src/components/layouts/FullLayout'
+import SimpleLayout from '../src/components/layouts/SimpleLayout'
 
 const Home: NextPage = () => {
-  return (
-   <FullLayout/>
-  )
+  return (<SimpleLayout/>)
 }
 
 export default Home

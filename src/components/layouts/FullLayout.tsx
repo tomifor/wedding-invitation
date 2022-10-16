@@ -8,6 +8,7 @@ import PhraseSection from '../modules/PhraseSection/PhraseSection'
 import LocationSection from '../modules/LocationSection/LocationSection'
 import RsvpSection from '../modules/rsvpSection/rsvpSection'
 import { CONFIG, SECTIONS } from '../../config/config'
+import PhotoGallery from '../modules/PhotoGallery/PhotoGallery'
 
 const FullLayout = () => {
   const [imageSelected, setImageSelected] = useState<{ image: string, order: number }>({image: '', order: 0});
@@ -20,7 +21,8 @@ const FullLayout = () => {
     phraseEnabled,
     socialEnabled,
     giftEnabled,
-    rsvpEnabled
+    rsvpEnabled,
+    photoGallery
   } = CONFIG.sectionsEnabled;
 
   const {countdown, location, gift, rsvp, social, phrase} = SECTIONS;
@@ -60,6 +62,12 @@ const FullLayout = () => {
             textColor={'#595B78'}
             description={social.description}/>
         </section>}
+      {
+        photoGallery &&
+        <PhotoGallery
+          onClickEasterEgg={() => setImageSelected({image: '/images/easter-4.jpeg', order: 3})}
+        />
+      }
       {phraseEnabled &&
         <section>
           <PhraseSection mainText={phrase.mainText}

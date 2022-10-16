@@ -36,10 +36,10 @@ const CountdownSection = ({date, onClickEasterEgg, title = 'Faltan', bgColor = '
                 <p className={styles.timeValue} onClick={onClickEasterEgg}>{minutes}</p>
                 <p className={styles.timeLabel}>Minutos</p>
               </div>
-              {/*<div className={styles.timeContainer}>*/}
-              {/*  <p className={styles.timeValue}>{seconds}</p>*/}
-              {/*  <p className={styles.timeLabel}>Segundos</p>*/}
-              {/*</div>*/}
+              <div className={styles.timeContainer}>
+                <p className={styles.timeValue}>{seconds}</p>
+                <p className={styles.timeLabel}>Segundos</p>
+              </div>
             </div>
           </div>
         )

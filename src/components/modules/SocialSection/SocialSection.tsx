@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './SocialSection.module.scss';
+import instagramLogo from '../../../../public/instagram.png';
+import Image from 'next/image'
 
 type Props = {
   hashtag: string;
@@ -14,10 +16,13 @@ const SocialSection = ({hashtag, url, btnUrlLabel, description, textColor = '#56
 
   return (
     <div className={styles.container} style={{color: textColor, backgroundColor: bgColor}}>
-      <a href={url} className={styles.hashtag} target={'_blank'} rel="noopener noreferrer">{hashtag}</a>
+      <div className={'flex align-items-center justify-content-center mb-2'}>
+        <Image src={instagramLogo} height={40} width={40} alt={'Instagram logo'}/>
+        <a href={url} className={styles.hashtag} target={'_blank'} rel="noopener noreferrer">{hashtag}</a>
+      </div>
       {description && <p className={styles.description}>{description}</p>}
-      {url && <a href={url} target={'_blank'} className={`${styles.link} btn-primary`} type={'button'}
-          rel="noopener noreferrer">{btnUrlLabel ?? 'Ver fotos de Instagram'}</a>}
+      {url && <a href={url} target={'_blank'} className={`${styles.link} btn-secondary`} type={'button'}
+          rel="noopener noreferrer">{btnUrlLabel ?? 'Seguir a @vickysanti20.11'}</a>}
     </div>
   )
 }

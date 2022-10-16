@@ -2,8 +2,9 @@
   text-align: center;
   padding: 30px 10px;
   .hashtag {
-    font-size: 36px;
+    font-size: 32px;
     cursor: pointer;
+    margin-left: 20px;
   }
   .description {
     margin-bottom: 30px;
@@ -11,5 +12,8 @@
   }
   .link {
     background-color: white;
+    &:hover {
+      background-color: lighten(#e8e8f3, 5);
+    }
   }
 }

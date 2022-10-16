@@ -6,9 +6,10 @@ type Props = {
   bgColor?: string;
   onClickNames?(): void;
   enableTextGesture?: boolean;
+  hideScrollGesture?: boolean;
 }
 
-const Welcome = ({bgColor, onClickNames, enableTextGesture}: Props) => {
+const Welcome = ({bgColor, onClickNames, enableTextGesture, hideScrollGesture}: Props) => {
   const [isMobile, setIsMobile] = useState<boolean | undefined>(undefined);
   const [showGesture, setShowGesture] = useState<boolean>(false);
 
@@ -33,7 +34,7 @@ const Welcome = ({bgColor, onClickNames, enableTextGesture}: Props) => {
           <Image onClick={onClickNames}  src={'/names.png'} priority height={500} width={300}  alt={'Vicky y Santi - 20/11/22'}/>
         </div>
       </div>
-      <div className={'scrollDown'}/>
+      {!hideScrollGesture && <div className={'scrollDown'}/>}
     </div>
   )
 }

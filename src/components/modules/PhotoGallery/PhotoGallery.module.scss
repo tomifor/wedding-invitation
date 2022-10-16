@@ -1,0 +1,17 @@
+.container {
+  padding: 20px 10px;
+  background-color: #fafbff;
+  .title {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  .galleryContainer {
+    max-width: 1286px;
+    margin: auto;
+  }
+}

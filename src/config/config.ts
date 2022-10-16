@@ -1,7 +1,7 @@
 export const CONFIG = {
   title: 'Vicky y Santi',
   description: 'Invitación de casamiento',
-  metaImagePreview: 'https://i.ibb.co/X87R0Qg/Captura-de-Pantalla-2021-12-30-a-la-s-22-39-00-2.png', // TODO
+  metaImagePreview: 'https://i.ibb.co/y5dDD5w/Captura-de-Pantalla-2022-10-16-a-la-s-11-46-00.png',
   sectionsEnabled: {
     welcomeEnabled: true,
     countdownEnabled: true,
@@ -10,6 +10,7 @@ export const CONFIG = {
     socialEnabled: true,
     rsvpEnabled: true,
     phraseEnabled: true,
+    photoGallery: true,
   },
   color: {
     primary: '',
@@ -41,9 +42,9 @@ export const SECTIONS = {
     redirect: 'https://forms.gle/345AMr3D87R5NahDA',
   },
   social: {
-    hashtag: '#VICKYySANTI',
-    url: 'https://www.instagram.com/explore/tags/vickyysanti',
-    description: 'No olvides etiquetarnos en tus fotos o videos de Instagram con nuestro hashtag!'
+    hashtag: '@vickysanti20.11',
+    url: 'https://instagram.com/vickysanti20.11',
+    description: 'Seguinos y etiquetanos cuando subas algo del casamiento! Vamos a estar compartiendo todo.'
   },
   phrase: {
     mainText: '¡Gracias por acompañarnos ',

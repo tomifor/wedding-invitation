@@ -20,7 +20,7 @@ const SecretModal = ({image, order, visible, onClose}: Props) => {
         <ModalCloseButton/>
         <ModalBody>
           <Box marginTop={'40px'}>
-            <Heading as={'h2'} size={'md'} color={'#a9913c'} textAlign={'center'} marginBottom={'15px'}>Esaaaa!
+            <Heading as={'h2'} size={'md'} color={'#667f9b'} textAlign={'center'} marginBottom={'15px'}>Esaaaa!
               Encontraste una de las fotos ocultas.</Heading>
             <Text textAlign={'center'} marginBottom={'8px'} fontWeight={300}>El primero que encuentre las <strong>5</strong> fotos y arme bien la frase,
               recibirá un regalo.</Text>
@@ -30,7 +30,7 @@ const SecretModal = ({image, order, visible, onClose}: Props) => {
             <Text textAlign={'center'}
                   fontWeight={'bold'}
                   borderRadius={'4px'}
-                  margin={'10px'} backgroundColor={'#fcf5ea'} padding={'8px 0'}
+                  margin={'10px'} backgroundColor={'#e8e8f3'} padding={'8px 0'}
                   textTransform={'uppercase'}>{PHRASE[order !== undefined ? order : 5]}</Text>
           </Box>
         </ModalBody>
