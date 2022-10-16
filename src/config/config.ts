@@ -1,7 +1,7 @@
 export const CONFIG = {
   title: 'Vicky y Santi',
   description: 'Invitación de casamiento',
-  metaImagePreview: 'https://i.ibb.co/y5dDD5w/Captura-de-Pantalla-2022-10-16-a-la-s-11-46-00.png',
+  metaImagePreview: 'https://i.ibb.co/Xyqmjpr/Captura-de-Pantalla-2022-10-16-a-la-s-15-07-03.png',
   sectionsEnabled: {
     welcomeEnabled: true,
     countdownEnabled: true,
