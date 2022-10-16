@@ -29,9 +29,11 @@ const Welcome = ({bgColor, onClickNames, enableTextGesture, hideScrollGesture}: 
       <div className={`${styles.backgroundImage} gradient-border`}>
         {isMobile === false && <Image src={'/wedding-background-desktop.png'} priority layout="fill" objectFit="cover" alt={'Fondo de invitación'}/>}
         {isMobile === true && <Image src={'/wedding-background-mobile.png'} priority layout="fill" objectFit="cover" alt={'Fondo de invitación'}/>}
-        <div className={styles.names}>
+        <div className={styles.names} >
           {showGesture && enableTextGesture && <span className={'touch-gesture'}/>}
-          <Image onClick={onClickNames}  src={'/names.png'} priority height={500} width={300}  alt={'Vicky y Santi - 20/11/22'}/>
+          <div onClick={onClickNames}>
+            <Image  src={'/names.png'} priority height={500} width={300}  alt={'Vicky y Santi - 20/11/22'}/>
+          </div>
         </div>
       </div>
       {!hideScrollGesture && <div className={'scrollDown'}/>}
