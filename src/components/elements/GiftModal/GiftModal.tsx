@@ -38,7 +38,7 @@ const GiftModal = ({visible, onClose}: Props) => {
               {ACCOUNTS.map(account => (
                 <Box key={account.alias} marginBottom={'20px'}>
                   <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>
-                    <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta {account.bank}</strong></Heading>
+                    <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta {account.accountType} {account.bank}</strong></Heading>
                     <Image src={`/banks/${account.logo}`} height={25} width={35} alt={`Logo ${account.bank}`}/>
                   </Box>
                   <p>Titular: {account.accountHolder}</p>

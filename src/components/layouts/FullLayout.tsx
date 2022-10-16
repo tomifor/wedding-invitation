@@ -44,7 +44,11 @@ const FullLayout = () => {
         </section>}
       {giftEnabled &&
         <section className={'section-container'}>
-          <GiftSection description={gift.description} onClickIcon={() => setImageSelected({image: '/images/easter-3.jpeg', order: 2})} bgColor={'#595B78'} iconColor={'#f7f7ff'}/>
+          <GiftSection
+            description={gift.description}
+            onClickIcon={() => setImageSelected({image: '/images/easter-3.jpeg', order: 2})}
+            bgColor={'#595B78'}
+            iconColor={'#f7f7ff'}/>
         </section>}
       {rsvpEnabled &&
         <section className={'section-container'}>
