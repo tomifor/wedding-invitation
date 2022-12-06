@@ -36,25 +36,6 @@ const GiftModal = ({visible, onClose}: Props) => {
             <section>
               <Heading as={'h2'} size={'md'} className={styles.title}>Lista de regalos</Heading>
               <Image src={`/aynic.jpg`} height={161} width={194} alt={`Aynic`}/>
-
-              {/*{ACCOUNTS.map(account => (*/}
-              {/*  <Box key={account.alias} marginBottom={'20px'}>*/}
-              {/*    <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>*/}
-              {/*      <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta {account.accountType} {account.bank}</strong></Heading>*/}
-              {/*      <Image src={`/banks/${account.logo}`} height={25} width={35} alt={`Logo ${account.bank}`}/>*/}
-              {/*    </Box>*/}
-              {/*    <p>Titular: {account.accountHolder}</p>*/}
-              {/*    <div className={styles.row}>*/}
-              {/*      <p>CBU: {account.cbu}</p>*/}
-              {/*      <span className={styles.btnCopy} onClick={() => copy(account.cbu, 'CBU')}><FiCopy/></span>*/}
-              {/*    </div>*/}
-              {/*    <div className={styles.row}>*/}
-              {/*      <p>Alias: {account.alias}</p>*/}
-              {/*      <span className={styles.btnCopy} onClick={() => copy(account.alias, 'Alias')}><FiCopy/></span>*/}
-              {/*    </div>*/}
-              {/*    <p>Nº de cuenta: {account.accountNumber}</p>*/}
-              {/*  </Box>*/}
-              {/*))}*/}
               <div>
                 <a type={'button'} className={'btn-primary'} href={'https://www.aynic.com.ar/sitio/listas-clientes.aspx?i=1&idl=3600'} rel="noreferrer" target={'_blank'}>Ver lista de regalo</a>
                 <p className={'mt-5 mb-1 text-bold'}>Contacto</p>
@@ -70,3 +51,24 @@ const GiftModal = ({visible, onClose}: Props) => {
 }
 
 export default GiftModal
+
+/**
+ *    {ACCOUNTS.map(account => (
+ *                 <Box key={account.alias} marginBottom={'20px'}>
+ *                   <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>
+ *                     <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta {account.accountType} {account.bank}</strong></Heading>
+ *                     <Image src={`/banks/${account.logo}`} height={25} width={35} alt={`Logo ${account.bank}`}/>
+ *                   </Box>
+ *                   <p>Titular: {account.accountHolder}</p>
+ *                   <div className={styles.row}>
+ *                     <p>CBU: {account.cbu}</p>
+ *                     <span className={styles.btnCopy} onClick={() => copy(account.cbu, 'CBU')}><FiCopy/></span>
+ *                   </div>
+ *                   <div className={styles.row}>
+ *                     <p>Alias: {account.alias}</p>
+ *                     <span className={styles.btnCopy} onClick={() => copy(account.alias, 'Alias')}><FiCopy/></span>
+ *                   </div>
+ *                   <p>Nº de cuenta: {account.accountNumber}</p>
+ *                 </Box>
+ *               ))}
+ */
