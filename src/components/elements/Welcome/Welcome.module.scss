@@ -6,14 +6,23 @@
     width: calc(100vw);
 
   }
+  .bgImageMobile {
+    min-width: 100%;
+    height: 100vh;
+  }
+  .bgImageDesktop {
+    min-width: 100%;
+    height: 100vh;
+  }
   .names {
     width: 100%;
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: center;
-    height: 100vh;
     align-items: center;
     padding-bottom: 50px;
+    top: 50%;
+    bottom: 50%;
 
   }
 }
