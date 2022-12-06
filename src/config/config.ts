@@ -22,13 +22,13 @@ export const CONFIG = {
 
 export const SECTIONS = {
   countdown: {
-    date: '2022-11-20T21:00:00'
+    date: '2023-03-11T21:00:00'
   },
   location: {
-    ceremonyDescription: 'La ceremonia se realizará el 30 de Febrero a las 18:00 horas en la Parroquia San Francisco Solano, Bella Vista.',
-    ceremonyUrl: 'https://goo.gl/maps/DniBzfSNiwQ2W35f8',
-    partyDescription: 'La fiesta se realizará el 20 de noviembre a las 20:30 en el Buenos Aires Rowing Club, Tigre.',
-    partyUrl: 'https://g.page/buenosairesrowing?share',
+    ceremonyDescription: 'La ceremonia se realizará el 11 de marzo a las 19:30 horas en la Basílica del Santísimo Sacramento, CABA.',
+    ceremonyUrl: 'https://goo.gl/maps/DECd9KGqtce9kEiW8',
+    partyDescription: 'Después de la ceremonia festejaremos en La Escondida de Olivos.',
+    partyUrl: 'https://goo.gl/maps/95Lz5iQaVSkFuG1V7',
   },
   gift: {
     description: 'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...',

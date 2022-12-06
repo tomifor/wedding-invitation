@@ -2,16 +2,13 @@ import React, { useState } from 'react';
 import Welcome from '../elements/Welcome/Welcome'
 import CountdownSection from '../modules/CountdownSection/CountdownSection'
 import SocialSection from '../modules/SocialSection/SocialSection'
-import SecretModal from '../elements/SecretModal/SecretModal'
 import GiftSection from '../modules/GiftSection/GiftSection'
 import PhraseSection from '../modules/PhraseSection/PhraseSection'
 import LocationSection from '../modules/LocationSection/LocationSection'
 import RsvpSection from '../modules/rsvpSection/rsvpSection'
 import { CONFIG, SECTIONS } from '../../config/config'
-import PhotoGallery from '../modules/PhotoGallery/PhotoGallery'
 
 const FullLayout = () => {
-  const [imageSelected, setImageSelected] = useState<{ image: string, order: number }>({image: '', order: 0});
 
 
   const {
@@ -22,16 +19,15 @@ const FullLayout = () => {
     socialEnabled,
     giftEnabled,
     rsvpEnabled,
-    photoGallery
   } = CONFIG.sectionsEnabled;
 
   const {countdown, location, gift, rsvp, social, phrase} = SECTIONS;
   return (
     <div>
-      {welcomeEnabled && <Welcome enableTextGesture onClickNames={() => setImageSelected({image: '/images/easter-1.jpeg', order: 0})}/>}
+      {welcomeEnabled && <Welcome enableTextGesture={false} />}
       {countdownEnabled &&
         <section>
-          <CountdownSection date={countdown.date} bgColor={'#eef1fa'} textColor={'#667f9b'} onClickEasterEgg={() => setImageSelected({image: '/images/easter-2.jpeg', order: 1})}/>
+          <CountdownSection date={countdown.date} bgColor={'#faf7ee'} textColor={'#9b8a66'} />
         </section>}
       {locationEnabled &&
         <section className={'section-container'}>
@@ -46,7 +42,6 @@ const FullLayout = () => {
         <section className={'section-container'}>
           <GiftSection
             description={gift.description}
-            onClickIcon={() => setImageSelected({image: '/images/easter-3.jpeg', order: 2})}
             bgColor={'#595B78'}
             iconColor={'#f7f7ff'}/>
         </section>}
@@ -71,7 +66,6 @@ const FullLayout = () => {
           <PhraseSection mainText={phrase.mainText}
                          bgColor={'#fafbff'}
                          textColor={'#667f9b'}
-                         onClickEaster={() => setImageSelected({image: '/images/easter-5.jpeg', order: 4})}
                          secondaryText={phrase.secondaryText}/>
         </section>}
     </div>
