@@ -35,24 +35,24 @@ const GiftModal = ({visible, onClose}: Props) => {
           <div className={styles.container}>
             <section>
               <Heading as={'h2'} size={'md'} className={styles.title}>Datos bancarios</Heading>
-              {ACCOUNTS.map(account => (
-                <Box key={account.alias} marginBottom={'20px'}>
-                  <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>
-                    <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta {account.accountType} {account.bank}</strong></Heading>
-                    <Image src={`/banks/${account.logo}`} height={25} width={35} alt={`Logo ${account.bank}`}/>
-                  </Box>
-                  <p>Titular: {account.accountHolder}</p>
-                  <div className={styles.row}>
-                    <p>CBU: {account.cbu}</p>
-                    <span className={styles.btnCopy} onClick={() => copy(account.cbu, 'CBU')}><FiCopy/></span>
-                  </div>
-                  <div className={styles.row}>
-                    <p>Alias: {account.alias}</p>
-                    <span className={styles.btnCopy} onClick={() => copy(account.alias, 'Alias')}><FiCopy/></span>
-                  </div>
-                  <p>Nº de cuenta: {account.accountNumber}</p>
-                </Box>
-              ))}
+              {/*{ACCOUNTS.map(account => (*/}
+              {/*  <Box key={account.alias} marginBottom={'20px'}>*/}
+              {/*    <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>*/}
+              {/*      <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta {account.accountType} {account.bank}</strong></Heading>*/}
+              {/*      <Image src={`/banks/${account.logo}`} height={25} width={35} alt={`Logo ${account.bank}`}/>*/}
+              {/*    </Box>*/}
+              {/*    <p>Titular: {account.accountHolder}</p>*/}
+              {/*    <div className={styles.row}>*/}
+              {/*      <p>CBU: {account.cbu}</p>*/}
+              {/*      <span className={styles.btnCopy} onClick={() => copy(account.cbu, 'CBU')}><FiCopy/></span>*/}
+              {/*    </div>*/}
+              {/*    <div className={styles.row}>*/}
+              {/*      <p>Alias: {account.alias}</p>*/}
+              {/*      <span className={styles.btnCopy} onClick={() => copy(account.alias, 'Alias')}><FiCopy/></span>*/}
+              {/*    </div>*/}
+              {/*    <p>Nº de cuenta: {account.accountNumber}</p>*/}
+              {/*  </Box>*/}
+              {/*))}*/}
             </section>
           </div>
         </ModalBody>
