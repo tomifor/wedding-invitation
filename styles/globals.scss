@@ -1,6 +1,6 @@
 $primary-color: #e8e8f3;
-$primary-background: lighten(#415743, 64);
-$primary-color-dark: darken(#415743, 10);
+$primary-background: lighten(#575341, 64);
+$primary-color-dark: darken(#575341, 10);
 
 html,
 body {
@@ -58,7 +58,7 @@ a {
 
 .btn-primary {
   cursor: pointer;
-  color: #415743;
+  color: #575341;
   background: $primary-background;
   border: transparent;
   padding: 0.75rem 1.25rem;

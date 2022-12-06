@@ -42,7 +42,7 @@ const FullLayout = () => {
         <section className={'section-container'}>
           <GiftSection
             description={gift.description}
-            bgColor={'#595B78'}
+            bgColor={'#787159'}
             iconColor={'#f7f7ff'}/>
         </section>}
       {rsvpEnabled &&
@@ -57,15 +57,15 @@ const FullLayout = () => {
           <SocialSection
             hashtag={social.hashtag}
             url={social.url}
-            bgColor={'#e8e8f3'}
-            textColor={'#595B78'}
+            bgColor={'#efebde'}
+            textColor={'#787159'}
             description={social.description}/>
         </section>}
       {phraseEnabled &&
         <section>
           <PhraseSection mainText={phrase.mainText}
-                         bgColor={'#fafbff'}
-                         textColor={'#667f9b'}
+                         bgColor={'#fffefa'}
+                         textColor={'#9b9266'}
                          secondaryText={phrase.secondaryText}/>
         </section>}
     </div>

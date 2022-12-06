@@ -1,7 +1,7 @@
 export const CONFIG = {
-  title: 'Vicky y Santi',
+  title: 'Vicky y Nacho',
   description: 'Invitación de casamiento',
-  metaImagePreview: 'https://i.ibb.co/Xyqmjpr/Captura-de-Pantalla-2022-10-16-a-la-s-15-07-03.png',
+  metaImagePreview: '', // TODO
   sectionsEnabled: {
     welcomeEnabled: true,
     countdownEnabled: true,
@@ -33,8 +33,8 @@ export const SECTIONS = {
   gift: {
     description: 'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...',
     accounts: [
-      {cbu: '15003038-00030361002478', alias: 'vickygarcea', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '3036100247', accountType: 'pesos'},
-      {cbu: '15003038-00030380705596', alias: 'vickygarceausd', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '3038070559', accountType: 'dólares'}
+      // {cbu: '15003038-00030361002478', alias: 'vickygarcea', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '3036100247', accountType: 'pesos'},
+      // {cbu: '15003038-00030380705596', alias: 'vickygarceausd', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '3038070559', accountType: 'dólares'}
     ]
   },
   rsvp: {
@@ -42,7 +42,7 @@ export const SECTIONS = {
     redirect: 'https://forms.gle/345AMr3D87R5NahDA',
   },
   social: {
-    hashtag: '@vickysanti20.11',
+    hashtag: '#VickyNacho',
     url: 'https://instagram.com/vickysanti20.11',
     description: 'Seguinos y etiquetanos cuando subas algo del casamiento! Vamos a estar compartiendo todo.'
   },

@@ -17,7 +17,7 @@ const SocialSection = ({hashtag, url, btnUrlLabel, description, textColor = '#56
   return (
     <div className={styles.container} style={{color: textColor, backgroundColor: bgColor}}>
       <div className={'flex align-items-center justify-content-center mb-2'}>
-        <Image src={instagramLogo} height={40} width={40} alt={'Instagram logo'}/>
+        {/*<Image src={instagramLogo} height={40} width={40} alt={'Instagram logo'}/>*/}
         <a href={url} className={styles.hashtag} target={'_blank'} rel="noopener noreferrer">{hashtag}</a>
       </div>
       {description && <p className={styles.description}>{description}</p>}
