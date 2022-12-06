@@ -34,7 +34,9 @@ const GiftModal = ({visible, onClose}: Props) => {
         <ModalBody>
           <div className={styles.container}>
             <section>
-              <Heading as={'h2'} size={'md'} className={styles.title}>Datos bancarios</Heading>
+              <Heading as={'h2'} size={'md'} className={styles.title}>Lista de regalos</Heading>
+              <Image src={`/aynic.jpg`} height={161} width={194} alt={`Aynic`}/>
+
               {/*{ACCOUNTS.map(account => (*/}
               {/*  <Box key={account.alias} marginBottom={'20px'}>*/}
               {/*    <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>*/}
@@ -53,6 +55,12 @@ const GiftModal = ({visible, onClose}: Props) => {
               {/*    <p>Nº de cuenta: {account.accountNumber}</p>*/}
               {/*  </Box>*/}
               {/*))}*/}
+              <div>
+                <a type={'button'} className={'btn-primary'} href={'https://www.aynic.com.ar/sitio/listas-clientes.aspx?i=1&idl=3600'} target={'_blank'}>Ver lista de regalo</a>
+                <p className={'mt-5 mb-1 text-bold'}>Contacto</p>
+                <p className={'mb-1'}>Email: <a href={'mailto:info@aynic.com.ar'} className={'underline'}>info@aynic.com.ar</a></p>
+                <p>Teléfono: <a href={'tel:1152756123'} className={'underline'}>1152756123</a></p>
+              </div>
             </section>
           </div>
         </ModalBody>

@@ -22,7 +22,7 @@ export const CONFIG = {
 
 export const SECTIONS = {
   countdown: {
-    date: '2023-03-11T21:00:00'
+    date: '2023-03-11T19:30:00'
   },
   location: {
     ceremonyDescription: 'La ceremonia se realizará el 11 de marzo a las 19:30 horas en la Basílica del Santísimo Sacramento, CABA.',
@@ -43,8 +43,9 @@ export const SECTIONS = {
   },
   social: {
     hashtag: '#VickyNacho',
-    url: 'https://instagram.com/vickysanti20.11',
-    description: 'Seguinos y etiquetanos cuando subas algo del casamiento! Vamos a estar compartiendo todo.'
+    url: 'https://www.instagram.com/explore/tags/vickynacho/',
+    description: 'No olvides etiquetarnos en tus fotos o videos de Instagram con nuestro hashtag!',
+    buttonLabel: 'Ver #VickyNacho'
   },
   phrase: {
     mainText: '¡Gracias por acompañarnos ',

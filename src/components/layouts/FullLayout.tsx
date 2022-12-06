@@ -59,6 +59,7 @@ const FullLayout = () => {
             url={social.url}
             bgColor={'#efebde'}
             textColor={'#787159'}
+            btnUrlLabel={social.buttonLabel}
             description={social.description}/>
         </section>}
       {phraseEnabled &&

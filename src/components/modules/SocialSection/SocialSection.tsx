@@ -21,8 +21,8 @@ const SocialSection = ({hashtag, url, btnUrlLabel, description, textColor = '#56
         <a href={url} className={styles.hashtag} target={'_blank'} rel="noopener noreferrer">{hashtag}</a>
       </div>
       {description && <p className={styles.description}>{description}</p>}
-      {url && <a href={url} target={'_blank'} className={`${styles.link} btn-secondary`} type={'button'}
-          rel="noopener noreferrer">{btnUrlLabel ?? 'Seguir a @vickysanti20.11'}</a>}
+      {url && btnUrlLabel && <a href={url} target={'_blank'} className={`${styles.link} btn-secondary`} type={'button'}
+          rel="noopener noreferrer">{btnUrlLabel}</a>}
     </div>
   )
 }
