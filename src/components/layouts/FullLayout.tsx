@@ -66,12 +66,6 @@ const FullLayout = () => {
             textColor={'#595B78'}
             description={social.description}/>
         </section>}
-      {
-        photoGallery &&
-        <PhotoGallery
-          onClickEasterEgg={() => setImageSelected({image: '/images/easter-4.jpeg', order: 3})}
-        />
-      }
       {phraseEnabled &&
         <section>
           <PhraseSection mainText={phrase.mainText}
@@ -80,9 +74,6 @@ const FullLayout = () => {
                          onClickEaster={() => setImageSelected({image: '/images/easter-5.jpeg', order: 4})}
                          secondaryText={phrase.secondaryText}/>
         </section>}
-      <SecretModal order={imageSelected.order} image={imageSelected.image ? imageSelected.image : '/undraw_wedding.svg'}
-                   visible={!!imageSelected.image}
-                   onClose={() => setImageSelected({image: '', order: 0})}/>
     </div>
   )
 }
