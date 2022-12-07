@@ -35,10 +35,12 @@ const GiftModal = ({visible, onClose}: Props) => {
           <div className={styles.container}>
             <section>
               <Heading as={'h2'} size={'md'} className={styles.title}>Lista de regalos</Heading>
-              <Image src={`/aynic.jpg`} height={161} width={194} alt={`Aynic`}/>
+              <div className={'flex justify-content-center mb-3'}>
+                <Image src={`/aynic.jpg`} height={161} width={194} alt={`Aynic`}/>
+              </div>
               <div>
                 <a type={'button'} className={'btn-primary'} href={'https://www.aynic.com.ar/sitio/listas-clientes.aspx?i=1&idl=3600'} rel="noreferrer" target={'_blank'}>Ver lista de regalo</a>
-                <p className={'mt-5 mb-1 text-bold'}>Contacto</p>
+                <p className={'mt-5 mb-1 font-bold'}>Contacto</p>
                 <p className={'mb-1'}>Email: <a href={'mailto:info@aynic.com.ar'} className={'underline'}>info@aynic.com.ar</a></p>
                 <p>Teléfono: <a href={'tel:1152756123'} className={'underline'}>1152756123</a></p>
               </div>

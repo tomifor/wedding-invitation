@@ -15,7 +15,7 @@ const SimpleLayout = () => {
     <div>
       <Welcome hideScrollGesture />
         <section>
-          <CountdownSection date={countdown.date} bgColor={'#eef1fa'} textColor={'#667f9b'} />
+          <CountdownSection date={countdown.date} bgColor={'#faf7ee'} textColor={'#9b8a66'} />
         </section>
         <section className={'section-container'}>
           <GiftSection description={gift.description} bgColor={'#595B78'} iconColor={'#f7f7ff'}/>
@@ -28,7 +28,6 @@ const SimpleLayout = () => {
             textColor={'#595B78'}
             description={social.description}/>
         </section>
-      <PhotoGallery/>
         <section>
           <PhraseSection mainText={phrase.mainText}
                          bgColor={'#fafbff'}

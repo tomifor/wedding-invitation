@@ -39,7 +39,7 @@ export const SECTIONS = {
   },
   rsvp: {
     description: 'Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!',
-    redirect: 'https://forms.gle/345AMr3D87R5NahDA',
+    redirect: 'https://forms.gle/fQ8LZVQrtBFBBFVN6',
   },
   social: {
     hashtag: '#VickyNacho',

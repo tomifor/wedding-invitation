@@ -43,6 +43,7 @@ const FullLayout = () => {
           <GiftSection
             description={gift.description}
             bgColor={'#787159'}
+            buttonLabel={'Ver lista de regalo'}
             iconColor={'#f7f7ff'}/>
         </section>}
       {rsvpEnabled &&

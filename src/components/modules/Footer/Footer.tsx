@@ -7,16 +7,17 @@ const Footer = () => {
 
   return (
     <footer>
-      <Box p={'8px 6px 3px 6px'}>
-        <p><span style={{marginBottom: '6px'}}>Hecho por</span>
+      <Box p={'8px 6px 3px 8px'}>
+        <div className={'flex justify-content-center align-items-center'}>
+          <p className={'mt-1 mb-1'}>
+            <span className={'mr-1'}>Hecho por</span>
+          </p>
           <a href={URL} target={'_blank'} rel="noopener noreferrer">
-            <span className={'footer-logo'}>
-              <Image src={'/invify-logo.png'}
-                     height={15} width={39}
-                     alt={'Invify'}/>
-            </span>
+            <Image src={'/invify-logo.png'}
+                   height={15} width={39}
+                   alt={'Invify'}/>
           </a>
-        </p>
+        </div>
       </Box>
     </footer>
   )
