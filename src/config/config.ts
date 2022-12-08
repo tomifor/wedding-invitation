@@ -1,7 +1,7 @@
 export const CONFIG = {
   title: 'Vicky y Nacho',
   description: 'Invitación de casamiento',
-  metaImagePreview: '', // TODO
+  metaImagePreview: 'https://i.ibb.co/yN1R1jJ/Captura-de-pantalla-2022-12-08-a-la-s-19-54-04.png',
   sectionsEnabled: {
     welcomeEnabled: true,
     countdownEnabled: true,
