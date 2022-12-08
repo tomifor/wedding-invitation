@@ -1,10 +1,8 @@
 import React from 'react';
 import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay } from '@chakra-ui/modal'
 import styles from './GiftModal.module.scss';
-import { Box, Heading, useToast } from '@chakra-ui/react'
+import { Heading, useToast } from '@chakra-ui/react'
 import { copyToClipboard } from '../../../utils/copyToClipboard'
-import { FiCopy } from 'react-icons/fi';
-import Image from 'next/image';
 import { SECTIONS } from '../../../config/config'
 
 type Props = {
@@ -36,7 +34,7 @@ const GiftModal = ({visible, onClose}: Props) => {
             <section>
               <Heading as={'h2'} size={'md'} className={styles.title}>Lista de regalos</Heading>
               <div className={'flex justify-content-center mb-3'}>
-                <Image src={`https://aynic.com.ar/sitio/img/all_you_need_is_click.jpg`} height={161} width={194} alt={`Aynic`}/>
+                <img src={`https://aynic.com.ar/sitio/img/all_you_need_is_click.jpg`} height={161} width={194} alt={`Aynic`}/>
               </div>
               <div>
                 <a type={'button'} className={'btn-primary'} href={'https://www.aynic.com.ar/sitio/listas-clientes.aspx?i=1&idl=3600'} rel="noreferrer" target={'_blank'}>Ver lista de regalo</a>
