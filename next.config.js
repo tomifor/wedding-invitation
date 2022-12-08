@@ -32,4 +32,14 @@ module.exports = {
       },
     ]
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'aynic.com.ar',
+        port: '443',
+        pathname: '/**',
+      },
+    ],
+  },
 }

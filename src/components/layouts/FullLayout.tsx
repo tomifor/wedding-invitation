@@ -33,6 +33,8 @@ const FullLayout = () => {
         <section className={'section-container'}>
           <LocationSection
             ceremonyDescription={location.ceremonyDescription}
+            ceremonyTitle={''}
+            partyTitle={''}
             ceremonyUrl={location.ceremonyUrl}
             partyDescription={location.partyDescription}
             partyUrl={location.partyUrl}
@@ -49,6 +51,7 @@ const FullLayout = () => {
       {rsvpEnabled &&
         <section className={'section-container'}>
           <RsvpSection
+            title={rsvp.title}
             description={rsvp.description}
             redirect={rsvp.redirect}
           />

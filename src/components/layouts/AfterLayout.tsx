@@ -19,40 +19,41 @@ const AfterLayout = () => {
       <div>
         <Welcome />
           <section>
-            <CountdownSection date={countdown.date} bgColor={'#eef1fa'} textColor={'#667f9b'}/>
+            <CountdownSection date={countdown.date} bgColor={'#faf7ee'} textColor={'#9b8a66'} />
           </section>
           <section className={'section-container'}>
             <LocationSection
               ceremonyDescription={location.ceremonyDescription}
               ceremonyUrl={location.ceremonyUrl}
-              partyDescription={'La fiesta se realizará el 20 de noviembre a las 23:55 en el Buenos Aires Rowing Club, Tigre.'}
+              partyDescription={'Los esperamos después de las 00:00 en "La Escondida de Olivos"'}
               partyUrl={location.partyUrl}
             />
           </section>
           <section className={'section-container'}>
-            <GiftSection description={gift.description} bgColor={'#595B78'} iconColor={'#f7f7ff'}/>
-          </section>
+            <GiftSection
+              description={gift.description}
+              bgColor={'#787159'}
+              buttonLabel={'Ver lista de regalo'}
+              iconColor={'#f7f7ff'}/>          </section>
           <section className={'section-container'}>
             <RsvpSection
+              title={rsvp.title}
               description={rsvp.description}
-              redirect={'https://forms.gle/mZvN9xnp4R8RFu877'}
-            />
+              redirect={'https://forms.gle/ARrgvBzAGG58YxE46'}/>
           </section>
           <section>
             <SocialSection
               hashtag={social.hashtag}
               url={social.url}
-              bgColor={'#e8e8f3'}
-              textColor={'#595B78'}
+              bgColor={'#efebde'}
+              textColor={'#787159'}
+              btnUrlLabel={social.buttonLabel}
               description={social.description}/>
           </section>
-       <section>
-         <PhotoGallery/>
-       </section>
           <section>
             <PhraseSection mainText={phrase.mainText}
-                           bgColor={'#fafbff'}
-                           textColor={'#667f9b'}
+                           bgColor={'#fffefa'}
+                           textColor={'#9b9266'}
                            secondaryText={phrase.secondaryText}/>
           </section>
       </div>
