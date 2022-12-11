@@ -13,7 +13,7 @@ const PhraseSection = ({mainText, secondaryText, onClickEaster, textColor = '#6e
 
   return (
     <div className={styles.phraseContainer} style={{color: textColor, backgroundColor: bgColor}}>
-      <p className={styles.main}>{mainText}<span onClick={onClickEaster}>❣️!</span></p>
+      <p className={styles.main}>{mainText}</p>
       <p className={styles.secondary}>{secondaryText}</p>
     </div>
   )

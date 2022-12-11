@@ -49,7 +49,7 @@ export const SECTIONS = {
     buttonLabel: ''
   },
   phrase: {
-    mainText: '¡Gracias por acompañarnos ',
+    mainText: '¡Gracias por acompañarnos!',
     secondaryText: '',
   }
 }
