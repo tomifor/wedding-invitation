@@ -27,7 +27,7 @@ const AfterLayout = () => {
               ceremonyUrl={location.ceremonyUrl}
               partyTitle={''}
               ceremonyTitle={''}
-              partyDescription={'Los esperamos después de las 00:00 en "La Escondida de Olivos"'}
+              partyDescription={'Los esperamos después de las 00:00hs en "La Escondida de Olivos"'}
               partyUrl={location.partyUrl}
             />
           </section>

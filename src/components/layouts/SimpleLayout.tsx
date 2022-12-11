@@ -3,7 +3,6 @@ import Welcome from '../elements/Welcome/Welcome'
 import CountdownSection from '../modules/CountdownSection/CountdownSection'
 import GiftSection from '../modules/GiftSection/GiftSection'
 import SocialSection from '../modules/SocialSection/SocialSection'
-import PhotoGallery from '../modules/PhotoGallery/PhotoGallery'
 import PhraseSection from '../modules/PhraseSection/PhraseSection'
 import { SECTIONS } from '../../config/config'
 
