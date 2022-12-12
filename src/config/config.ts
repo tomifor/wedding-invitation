@@ -1,7 +1,7 @@
 export const CONFIG = {
-  title: 'Vicky y Nacho',
+  title: 'Euge y Tomi',
   description: 'Invitación de casamiento',
-  metaImagePreview: 'https://i.ibb.co/yN1R1jJ/Captura-de-pantalla-2022-12-08-a-la-s-19-54-04.png',
+  metaImagePreview: '',
   sectionsEnabled: {
     welcomeEnabled: true,
     countdownEnabled: true,
@@ -26,9 +26,9 @@ export const SECTIONS = {
   },
   location: {
     ceremonyDescription: 'Los invitamos a acompañarnos en la ceremonia religiosa el día 11 de marzo a las 19:30 hs en la Basílica del Santísimo Sacramento',
-    ceremonyUrl: 'https://goo.gl/maps/DECd9KGqtce9kEiW8',
+    ceremonyUrl: 'https://goo.gl/maps/pL1xYbtiGQ5WdArT6',
     partyDescription: 'Los esperamos después de la ceremonia en "La Escondida de Olivos"',
-    partyUrl: 'https://goo.gl/maps/95Lz5iQaVSkFuG1V7',
+    partyUrl: 'https://goo.gl/maps/QS5BVijizbwGot8i9',
   },
   gift: {
     description: 'Lista de regalos - AYNIC',
@@ -40,11 +40,11 @@ export const SECTIONS = {
   rsvp: {
     title: 'RSVP',
     description: '¡Nos gustaría que seas parte de este momento!',
-    redirect: 'https://forms.gle/fQ8LZVQrtBFBBFVN6',
+    redirect: 'https://docs.google.com/forms/d/e/1FAIpQLSd5lL2jkw9mAIEkeGvGWVaWbCzOuQNsIFefWit0u7x7IRAIMA/viewform?vc=0&c=0&w=1&flr=0',
   },
   social: {
-    hashtag: '#VickyNacho',
-    url: 'https://www.instagram.com/explore/tags/vickynacho/',
+    hashtag: '#EugeyTomi',
+    url: 'https://www.instagram.com/explore/tags/eugeytomi/',
     description: '',
     buttonLabel: ''
   },
