@@ -19,7 +19,7 @@ const RsvpSection = ({title, description, redirect, btnRedirectLabel, textColor,
         description={description}
         title={title ?? 'CONFIRMACIÓN DE ASISTENCIA'}
         redirect={redirect}
-        buttonLabel={btnRedirectLabel ?? 'Confirmar asistencia'}/>
+        buttonLabel={btnRedirectLabel ?? 'confirmar asistencia'}/>
     </div>
   )
 }

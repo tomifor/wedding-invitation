@@ -27,15 +27,15 @@ const FullLayout = () => {
       {welcomeEnabled && <Welcome enableTextGesture={false} />}
       {countdownEnabled &&
         <section>
-          <CountdownSection date={countdown.date} bgColor={'#faf7ee'} textColor={'#9b8a66'} />
+          <CountdownSection date={countdown.date} bgColor={'#939F9F'} textColor={'#FFF'} />
         </section>}
       {locationEnabled &&
         <section className={'section-container'}>
           <LocationSection
             ceremonyDescription={location.ceremonyDescription}
-            ceremonyTitle={''}
-            partyTitle={''}
             ceremonyUrl={location.ceremonyUrl}
+            ceremonyUrlLabel={'cómo llegar'}
+            partyUrlLabel={'cómo llegar'}
             partyDescription={location.partyDescription}
             partyUrl={location.partyUrl}
           />
@@ -44,8 +44,8 @@ const FullLayout = () => {
         <section className={'section-container'}>
           <GiftSection
             description={gift.description}
-            bgColor={'#787159'}
-            buttonLabel={'Ver lista de regalos'}
+            bgColor={'#939F9F'}
+            buttonLabel={'ver datos'}
             iconColor={'#f7f7ff'}/>
         </section>}
       {rsvpEnabled &&
@@ -61,16 +61,16 @@ const FullLayout = () => {
           <SocialSection
             hashtag={social.hashtag}
             url={social.url}
-            bgColor={'#efebde'}
-            textColor={'#787159'}
+            bgColor={'#eaeaea'}
+            textColor={'#1C3739'}
             btnUrlLabel={social.buttonLabel}
             description={social.description}/>
         </section>}
       {phraseEnabled &&
         <section>
           <PhraseSection mainText={phrase.mainText}
-                         bgColor={'#fffefa'}
-                         textColor={'#9b9266'}
+                         bgColor={'#fff'}
+                         textColor={'#1C3739'}
                          secondaryText={phrase.secondaryText}/>
         </section>}
     </div>
