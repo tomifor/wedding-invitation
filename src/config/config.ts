@@ -22,12 +22,12 @@ export const CONFIG = {
 
 export const SECTIONS = {
   countdown: {
-    date: '2023-03-11T19:30:00'
+    date: '2023-03-11T17:00:00'
   },
   location: {
-    ceremonyDescription: 'Los invitamos a acompañarnos en la ceremonia religiosa el día 11 de marzo a las 19:30 hs en la Basílica del Santísimo Sacramento',
+    ceremonyDescription: 'Parroquia San Benito',
     ceremonyUrl: 'https://goo.gl/maps/pL1xYbtiGQ5WdArT6',
-    partyDescription: 'Los esperamos después de la ceremonia en "La Escondida de Olivos"',
+    partyDescription: 'Espacio Márquez',
     partyUrl: 'https://goo.gl/maps/QS5BVijizbwGot8i9',
   },
   gift: {

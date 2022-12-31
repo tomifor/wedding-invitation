@@ -32,7 +32,7 @@ const Welcome = ({bgColor, onClickNames, enableTextGesture, hideScrollGesture}: 
         <div className={styles.names} >
           {showGesture && enableTextGesture && <span className={'touch-gesture'}/>}
           <div onClick={onClickNames}>
-            <Image  src={'/names.png'} priority height={583} width={350}  alt={'Vicky y Nacho - 11/03/23'}/>
+            <Image  src={'/names.svg'} priority height={583} width={350}  alt={'Euge y Tomi - 11/03/23'}/>
           </div>
         </div>
       </div>

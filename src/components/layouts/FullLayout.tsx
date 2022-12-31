@@ -24,7 +24,7 @@ const FullLayout = () => {
   const {countdown, location, gift, rsvp, social, phrase} = SECTIONS;
   return (
     <div>
-      {welcomeEnabled && <Welcome enableTextGesture={false} />}
+      {welcomeEnabled && <Welcome enableTextGesture={false} bgColor={'#000000'} />}
       {countdownEnabled &&
         <section>
           <CountdownSection date={countdown.date} bgColor={'#939F9F'} textColor={'#FFF'} />

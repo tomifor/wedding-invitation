@@ -3,6 +3,7 @@ import Section from '../../elements/Section/Section'
 import { BiGift } from 'react-icons/bi'
 import GiftModal from '../../elements/GiftModal/GiftModal'
 import { Box } from '@chakra-ui/react'
+import Image from 'next/image'
 
 type Props = {
   description?: string;
@@ -20,9 +21,9 @@ const GiftSection = ({description, buttonLabel, onClickIcon, bgColor, textColor,
   return (
     <div style={{backgroundColor: bgColor ?? '#657559', color: textColor ?? '#fff'}}>
       <Section
-        icon={<BiGift size={48} color={iconColor} onClick={onClickIcon}/>}
+        icon={<Image  src={'/icons/gift.svg'} priority height={100} width={100}  alt={'gift'}/>}
         secondaryButton
-        description={description}
+        subtitle={description}
         onClick={() => setGiftModalVisible(true)}
         buttonLabel={buttonLabel ?? 'Ver datos'}/>
       <GiftModal visible={giftModalVisible} onClose={() => setGiftModalVisible(false)}/>
