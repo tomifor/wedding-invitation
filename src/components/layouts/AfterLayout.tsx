@@ -17,45 +17,48 @@ const AfterLayout = () => {
   return (
     <div>
       <div>
-        <Welcome />
-          <section>
-            <CountdownSection date={countdown.date} bgColor={'#faf7ee'} textColor={'#9b8a66'} />
+        <Welcome enableTextGesture={false} bgColor={'#000000'} />
+        <section>
+          <CountdownSection date={countdown.date} bgColor={'#939F9F'} textColor={'#FFF'} />
           </section>
           <section className={'section-container'}>
             <LocationSection
               ceremonyDescription={location.ceremonyDescription}
               ceremonyUrl={location.ceremonyUrl}
-              partyTitle={''}
-              ceremonyTitle={''}
-              partyDescription={'Los esperamos después de las 00:00hs en "La Escondida de Olivos"'}
+              ceremonyUrlLabel={'cómo llegar'}
+              partyUrlLabel={'cómo llegar'}
+              partySubtitle={'Te esperamos a partir de las 23 hs.'}
+              partyDescription={location.partyDescription}
               partyUrl={location.partyUrl}
             />
           </section>
           <section className={'section-container'}>
             <GiftSection
               description={gift.description}
-              bgColor={'#787159'}
-              buttonLabel={'Ver lista de regalos'}
-              iconColor={'#f7f7ff'}/>          </section>
+              bgColor={'#939F9F'}
+              buttonLabel={'ver datos'}
+              iconColor={'#f7f7ff'}/>
+          </section>
           <section className={'section-container'}>
             <RsvpSection
               title={rsvp.title}
               description={rsvp.description}
-              redirect={'https://forms.gle/ARrgvBzAGG58YxE46'}/>
+              redirect={rsvp.redirect}
+            />
           </section>
           <section>
             <SocialSection
               hashtag={social.hashtag}
               url={social.url}
-              bgColor={'#efebde'}
-              textColor={'#787159'}
+              bgColor={'#eaeaea'}
+              textColor={'#1C3739'}
               btnUrlLabel={social.buttonLabel}
               description={social.description}/>
           </section>
           <section>
             <PhraseSection mainText={phrase.mainText}
-                           bgColor={'#fffefa'}
-                           textColor={'#9b9266'}
+                           bgColor={'#fff'}
+                           textColor={'#1C3739'}
                            secondaryText={phrase.secondaryText}/>
           </section>
       </div>

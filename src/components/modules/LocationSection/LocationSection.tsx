@@ -13,10 +13,11 @@ type Props = {
   partyDescription?: string;
   partyUrl?: string;
   partyUrlLabel?: string;
+  partySubtitle?: string;
   onClickEasterEgg?(): void;
 }
 
-const LocationSection = ({ceremonyDescription, ceremonyUrl, ceremonyTitle, onClickEasterEgg, ceremonyUrlLabel, partyDescription, partyUrl, partyTitle, partyUrlLabel}: Props) => {
+const LocationSection = ({ceremonyDescription, ceremonyUrl, ceremonyTitle, onClickEasterEgg, ceremonyUrlLabel, partyDescription, partyUrl, partyTitle, partyUrlLabel, partySubtitle}: Props) => {
 
   return (
     <Box className={'grid  w-full'}>
@@ -36,7 +37,7 @@ const LocationSection = ({ceremonyDescription, ceremonyUrl, ceremonyTitle, onCli
                  description={partyDescription}
                  redirect={partyUrl}
                  description2={'Av. Márquez 504, San Isidro.'}
-                 subtitle={'Te esperamos a partir de las 19 hs.'}
+                 subtitle={partySubtitle ?? 'Te esperamos a partir de las 19 hs.'}
                  buttonLabel={partyUrlLabel ?? 'Ver en Google Maps'}/>
       </div>
     </Box>

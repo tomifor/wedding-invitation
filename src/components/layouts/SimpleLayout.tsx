@@ -12,30 +12,30 @@ const SimpleLayout = () => {
 
   return (
     <div>
-      <Welcome hideScrollGesture />
+      <Welcome enableTextGesture={false} bgColor={'#000000'} />
         <section>
-          <CountdownSection date={countdown.date} bgColor={'#faf7ee'} textColor={'#9b8a66'} />
+          <CountdownSection date={countdown.date} bgColor={'#939F9F'} textColor={'#FFF'} />
         </section>
         <section className={'section-container'}>
           <GiftSection
             description={gift.description}
-            bgColor={'#787159'}
-            buttonLabel={'Ver lista de regalos'}
+            bgColor={'#939F9F'}
+            buttonLabel={'ver datos'}
             iconColor={'#f7f7ff'}/>
         </section>
         <section>
           <SocialSection
             hashtag={social.hashtag}
             url={social.url}
-            bgColor={'#efebde'}
-            textColor={'#787159'}
+            bgColor={'#eaeaea'}
+            textColor={'#1C3739'}
             btnUrlLabel={social.buttonLabel}
             description={social.description}/>
         </section>
         <section>
           <PhraseSection mainText={phrase.mainText}
-                         bgColor={'#fffefa'}
-                         textColor={'#9b9266'}
+                         bgColor={'#fff'}
+                         textColor={'#1C3739'}
                          secondaryText={phrase.secondaryText}/>
         </section>
     </div>
