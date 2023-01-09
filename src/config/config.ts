@@ -1,7 +1,7 @@
 export const CONFIG = {
   title: 'Euge y Tomi',
   description: 'Invitación de casamiento',
-  metaImagePreview: '',
+  metaImagePreview: 'https://i.ibb.co/5L8xjGg/Captura-de-pantalla-2023-01-08-a-la-s-23-30-46.png',
   sectionsEnabled: {
     welcomeEnabled: true,
     countdownEnabled: true,
