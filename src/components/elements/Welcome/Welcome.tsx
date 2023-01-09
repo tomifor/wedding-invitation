@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Welcome.module.scss';
 import Image from 'next/image';
+import backgroundImage from '../../../../public/main.webp';
 
 type Props = {
   bgColor?: string;
@@ -28,7 +29,7 @@ const Welcome = ({bgColor, onClickNames, enableTextGesture, hideScrollGesture}: 
     <div className={styles.container} style={{backgroundColor: bgColor ?? '#f5efea'}}>
       <div className={`${styles.backgroundImage} gradient-border`}>
         {/*{isMobile === false && <Image src={'/wedding-background-desktop.png'} width={2501} height={1667} priority className={styles.bgImageDesktop} alt={'Fondo de invitación'}/>}*/}
-        {/*{isMobile === true && <Image src={'/wedding-background-mobile.png'} width={1922} height={1022} priority className={styles.bgImageMobile} alt={'Fondo de invitación'}/>}*/}
+        <Image src={backgroundImage} priority className={styles.bgImageMobile} alt={'Euge y Tomi'}/>
         <div className={styles.names} >
           {showGesture && enableTextGesture && <span className={'touch-gesture'}/>}
           <div onClick={onClickNames}>

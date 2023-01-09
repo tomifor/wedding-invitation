@@ -5,7 +5,11 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Head from 'next/head'
 import Footer from '../src/components/modules/Footer/Footer'
 import React from 'react'
-import { CONFIG } from '../src/config/config'
+import { CONFIG } from '../src/config/config';
+import { Poppins } from '@next/font/google'
+
+const poppins = Poppins({ subsets: ['latin'], weight: ['300', '400', '700'] })
+
 
 function MyApp ({Component, pageProps}: AppProps) {
 
@@ -18,7 +22,9 @@ function MyApp ({Component, pageProps}: AppProps) {
         <meta name="description" content={description}/>
         <meta property="og:image" content={metaImagePreview} />
       </Head>
-      <ChakraProvider><Component {...pageProps} /></ChakraProvider>
+      <main className={poppins.className}>
+        <ChakraProvider><Component {...pageProps} /></ChakraProvider>
+      </main>
       <Footer/>
     </div>
   )

@@ -4,11 +4,17 @@
     position: relative;
     height: calc(100vh);
     width: calc(100vw);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 
   }
   .bgImageMobile {
-    min-width: 100%;
+
     height: 100vh;
+    width: auto;
+    max-height: 1079px;
+    max-width: 1980px !important;
   }
   .bgImageDesktop {
     min-width: 100%;
