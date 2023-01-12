@@ -1,9 +1,11 @@
 import React from 'react';
 import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay } from '@chakra-ui/modal'
 import styles from './GiftModal.module.scss';
-import { Heading, useToast } from '@chakra-ui/react'
+import { Box, Heading, useToast } from '@chakra-ui/react'
 import { copyToClipboard } from '../../../utils/copyToClipboard'
 import { SECTIONS } from '../../../config/config'
+import Image from 'next/image';
+import { FiCopy } from 'react-icons/fi'
 
 type Props = {
   visible: boolean;
@@ -32,16 +34,25 @@ const GiftModal = ({visible, onClose}: Props) => {
         <ModalBody>
           <div className={styles.container}>
             <section>
-              <Heading as={'h2'} size={'md'} className={styles.title}>Lista de regalos</Heading>
-              <div className={'flex justify-content-center mb-3'}>
-                <img src={`https://aynic.com.ar/sitio/img/all_you_need_is_click.jpg`} height={161} width={194} alt={`Aynic`}/>
-              </div>
-              <div>
-                <a type={'button'} className={'btn-primary'} href={'https://www.aynic.com.ar/sitio/listas-clientes.aspx?i=1&idl=3600'} rel="noreferrer" target={'_blank'}>Ver lista de regalo</a>
-                <p className={'mt-5 mb-1 font-bold'}>Contacto</p>
-                <p className={'mb-1'}>Email: <a href={'mailto:info@aynic.com.ar'} className={'underline'}>info@aynic.com.ar</a></p>
-                <p>Teléfono: <a href={'tel:1152756123'} className={'underline'}>1152756123</a></p>
-              </div>
+              <Heading as={'h2'} size={'md'} className={styles.title}>Datos bancarios</Heading>
+              {ACCOUNTS.map(account => (
+                <Box key={account.alias} marginBottom={'20px'}>
+                  <Box flexDirection={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'} marginBottom={'8px'}>
+                    <Heading as={'h3'} size={'sm'} marginRight={'5px'}><strong>Cuenta {account.accountType} {account.bank}</strong></Heading>
+                    <Image src={`/banks/${account.logo}`} height={25} width={25} alt={`Logo ${account.bank}`}/>
+                  </Box>
+                  <p>Titular: {account.accountHolder}</p>
+                  <div className={styles.row}>
+                    <p>CBU: {account.cbu}</p>
+                    <span className={styles.btnCopy} onClick={() => copy(account.cbu, 'CBU')}><FiCopy/></span>
+                  </div>
+                  <div className={styles.row}>
+                    <p>Alias: {account.alias}</p>
+                    <span className={styles.btnCopy} onClick={() => copy(account.alias, 'Alias')}><FiCopy/></span>
+                  </div>
+                  {/*<p>Nº de cuenta: {account.accountNumber}</p>*/}
+                </Box>
+              ))}
             </section>
           </div>
         </ModalBody>

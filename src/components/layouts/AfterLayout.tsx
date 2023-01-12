@@ -43,7 +43,7 @@ const AfterLayout = () => {
             <RsvpSection
               title={rsvp.title}
               description={rsvp.description}
-              redirect={rsvp.redirect}
+              redirect={'https://docs.google.com/forms/d/e/1FAIpQLScOgaCH2GIXE4_2t37VdY8L80RI8YlBPlJiuCcjWRyrtpmpww/viewform?usp=sf_link'}
             />
           </section>
           <section>

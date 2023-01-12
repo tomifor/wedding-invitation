@@ -33,8 +33,7 @@ export const SECTIONS = {
   gift: {
     description: 'Si querés ayudarnos en este nuevo camino..',
     accounts: [
-      // {cbu: '15003038-00030361002478', alias: 'vickygarcea', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '3036100247', accountType: 'pesos'},
-      // {cbu: '15003038-00030380705596', alias: 'vickygarceausd', bank: 'HSBC', logo: 'hsbc.png', accountHolder: 'Garcea, Maria Victoria', accountNumber: '3038070559', accountType: 'dólares'}
+      {cbu: '0150986501000002161494', alias: 'eugeytomi2023', bank: 'ICBC', logo: 'icbc.png', accountHolder: 'Olivero Ham Tomás', accountNumber: '-', accountType: 'pesos'},
     ]
   },
   rsvp: {
