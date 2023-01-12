@@ -13,6 +13,7 @@
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
     "@next/font": "^13.1.1",
+    "@vercel/analytics": "^0.1.7",
     "framer-motion": "7.6.19",
     "next": "13.1.1",
     "primeflex": "3.3.0",

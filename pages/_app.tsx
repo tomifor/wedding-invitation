@@ -7,6 +7,8 @@ import Footer from '../src/components/modules/Footer/Footer'
 import React from 'react'
 import { CONFIG } from '../src/config/config';
 import { Poppins } from '@next/font/google'
+import { Analytics } from '@vercel/analytics/react';
+
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['300', '400', '700'] })
 
@@ -26,6 +28,7 @@ function MyApp ({Component, pageProps}: AppProps) {
         <ChakraProvider><Component {...pageProps} /></ChakraProvider>
       </main>
       <Footer/>
+      <Analytics />
     </div>
   )
 }
